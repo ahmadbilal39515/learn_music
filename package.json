@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.1",
+    "@hotwired/turbo-rails": "^7.2.4",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "esbuild": "^0.16.17",
+    "sass": "^1.57.1"
+  },
+  "name": "bobcekay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RobertCekay/bobcekay.git",
+  "author": "Robert Cekay <robertcekay@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild ./app/javascript/*.* --bundle --sourcemap --outdir=./app/assets/builds",
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss app/assets/builds/application.scss --no-source-map --load-path=node_modules"
+  }
+}
