@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   resource :funnel
 
   get '/realmajik', to: 'funnel#realmajik'
-  get '/test', to: 'funnel#email_squeeze'
+  get '/turquoiserings', to: 'funnel#email_squeeze'
+  post '/create_checkout_session', to: 'funnel#create_checkout_session'
 
   # Defines the root path route ("/")
   root 'public#index'
