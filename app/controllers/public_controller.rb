@@ -1,10 +1,7 @@
 class PublicController < ApplicationController
-
-  def index
-
-  end
+  def index; end
 
   def realmajik
-    render layout: "one_page"
+    render layout: 'one_page'
   end
 end
