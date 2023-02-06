@@ -7,6 +7,8 @@ class FunnelController < ApplicationController
   end
 
   def realmajik
-    render layout: 'one_page'
+    render layout: 'funnel'
   end
+
+
 end
