@@ -6,6 +6,7 @@ class FunnelController < ApplicationController
   def index
   end
 
+  # Get all views to be in a workable state
   def email_squeeze
     render layout: 'funnel'
   end
