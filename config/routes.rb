@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   post '/create_checkout_session', to: 'funnel#create_checkout_session'
 
   # Defines the root path route ("/")
-  root 'public#index'
+  root 'funnel#email_squeeze'
 end
