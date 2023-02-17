@@ -5,6 +5,8 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
+    "bootstrap-sass": "^3.4.3",
+    "bootstrap-scss": "^5.2.3",
     "esbuild": "^0.16.17",
     "sass": "^1.57.1"
   },
@@ -16,7 +18,6 @@
   "license": "MIT",
   "scripts": {
     "build": "esbuild ./app/javascript/*.* --bundle --sourcemap --outdir=./app/assets/builds",
-    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss app/assets/builds/application.scss --no-source-map --load-path=node_modules --watch",
-    "build:css:lander": "sass ./app/assets/stylesheets/lander.css app/assets/builds/application.css --no-source-map --load-path=node_modules"
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss app/assets/builds/application.scss --no-source-map --load-path=node_modules"
   }
 }

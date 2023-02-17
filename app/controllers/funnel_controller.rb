@@ -6,23 +6,19 @@ class FunnelController < ApplicationController
 
   def index; end
 
-  #1. Get all views to be in a workable state
+  # 1. Get all views to be in a workable state
   def email_squeeze
     render layout: 'funnel'
   end
 
-  # 2. Get 
-  def email_squeeze_submit
-
-  end
+  # 2. Get
+  def email_squeeze_submit; end
 
   def real_majik
     render 'real_majik', layout: 'funnel'
   end
 
-  def real_majik_purchased
-
-  end
+  def real_majik_purchased; end
 
   def create_checkout_session
     # content_type 'application/json'
