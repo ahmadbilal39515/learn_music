@@ -1,0 +1,30 @@
+<html>
+  <head>
+      <title>Bob Cekay</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <link rel="icon" type="image/png" href="" />
+
+
+
+
+  </body>
+</html>
+
+<div id="layoutDefault">
+  <div id="layoutDefault_content">
+      <main>
+          <!-- Navbar-->
+
+          <%= render 'shared/funnel_header' %>
+          <!-- Page Header-->
+          <%= yield %>
+      </main>
+  </div>
+    <%= render 'shared/funnel_footer'%>
+</div>

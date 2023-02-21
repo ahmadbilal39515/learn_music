@@ -1,5 +1,24 @@
-@import 'bootstrap/scss/bootstrap';
+// @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+// * * * * * * * * * * * * * *
+// * * Import core styles  * *
+// * * * * * * * * * * * * * *
+
+// Includes Bootstrap and styling shared across
+// all themes using the Start Bootstrap Pro
+// design language
+
+@import './core/styles';
+
+// * * * * * * * * * * * * * * * * * *
+// * * Import SB UI Kit Pro styles * *
+// * * * * * * * * * * * * * * * * * *
+
+// Includes styling specific to the SB UI Kit Pro
+// theme - must load after core styles!
+
+@import './ui-kit/styles';
 
 
 /* GLOBAL STYLES
@@ -10,7 +29,6 @@ body {
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
