@@ -8,11 +8,25 @@ class FunnelController < ApplicationController
 
   # 1. Get all views to be in a workable state
   def email_squeeze
+    @person = Person.new
     render layout: 'funnel'
   end
 
   # 2. Get
-  def email_squeeze_submit; end
+  def email_squeeze_submit
+    @person = Person.new(email_squeeze_params)
+
+    if @person.save
+      @render_file = true
+      flash.now[:notice] = "Thanks for downloading Turquoise Rings!"
+    else
+      flash.now[:error] = @person.errors.full_messages[0]
+    end
+
+    render 'email_squeeze', layout: 'funnel'
+  end
+
+
 
   def real_majik
     render 'real_majik', layout: 'funnel'
@@ -38,5 +52,13 @@ class FunnelController < ApplicationController
                                                })
 
     redirect_to session.url, allow_other_host: true
+  end
+
+
+
+  private
+
+  def email_squeeze_params
+    params.require(:person).permit(:email, :first_name, :last_name)
   end
 end
