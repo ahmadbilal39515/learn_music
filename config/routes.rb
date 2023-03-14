@@ -8,7 +8,10 @@ Rails.application.routes.draw do
 
   get '/realmagic', to: 'funnel#real_majik'
   get '/turquoiserings', to: 'funnel#email_squeeze'
+  match :email_squeeze_submit, to: 'funnel#email_squeeze_submit', as: "email_squeeze_submit", via: [:post]
+
   post '/create_checkout_session', to: 'funnel#create_checkout_session'
+  post '/confirmation', to: 'funnel#email_squeeze_confirmation'
 
   # Defines the root path route ("/")
   root 'funnel#email_squeeze'
