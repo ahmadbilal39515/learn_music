@@ -84,4 +84,4 @@ gem 'jsbundling-rails', '~> 1.1'
 gem 'sassc-rails'
 
 
-gem "font-awesome-sass", "~> 6.3.0"
+# gem "font-awesome-sass", "~> 6.3.0"

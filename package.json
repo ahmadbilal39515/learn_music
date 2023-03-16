@@ -1,16 +1,16 @@
 {
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.3.0",
-    "@hotwired/stimulus": "^3.2.1",
-    "@hotwired/turbo-rails": "^7.2.4",
-    "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.10.3",
-    "bootstrap-sass": "^3.4.3",
-    "bootstrap-scss": "^5.2.3",
-    "esbuild": "^0.16.17",
-    "font-awesome": "^4.7.0",
-    "sass": "^1.57.1"
+    "@fortawesome/fontawesome-free": "6.3.0",
+    "@hotwired/stimulus": "3.2.1",
+    "@hotwired/turbo-rails": "7.2.4",
+    "@popperjs/core": "2.11.6",
+    "bootstrap": "5.2.3",
+    "bootstrap-icons": "1.10.3",
+    "bootstrap-sass": "3.4.3",
+    "bootstrap-scss": "5.2.3",
+    "esbuild": "0.16.17",
+    "font-awesome": "4.7.0",
+    "sass": "1.57.1"
   },
   "name": "bobcekay",
   "version": "1.0.0",
