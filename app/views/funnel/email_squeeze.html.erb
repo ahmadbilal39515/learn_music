@@ -15,7 +15,7 @@
             <iframe
               id="main-banner-video"
               class="embed-responsive-item"
-              src="https://www.youtube.com/embed/jla_sNw568M?autoplay=1&amprel=0&amp;controls=0&amp&amp;showinfo=0&amp;modestbranding=1"
+              src="https://www.youtube.com/embed/jla_sNw568M?autoplay=1&controls=0&showinfo=0&modestbranding=1"
               style="height: 330px;width: 100%;"
               >
             </iframe>
@@ -31,7 +31,7 @@
           <div class="card rounded-3 text-lgiht">
             <div class="card-header py-4">Get a free copy of Turquise Rings!</div>
             <div class="card-body">
-              <%= form_with model: @person, url: :email_squeeze_submit, method: :post do |form| %>
+              <%= form_with model: @person, url: :turquoiserings_confirmation, method: :post do |form| %>
                 <div class="row gx-5 mb-3">
                   <div class="col-md-6">
                     <%= form.label :first_name, class: 'text-gray-600' %>
