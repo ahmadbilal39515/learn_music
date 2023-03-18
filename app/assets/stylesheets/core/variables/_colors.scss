@@ -11,6 +11,8 @@ $indigo: #5800e8;
 $purple: #6900c7;
 $pink: #e30059;
 
+$cool_darl_blue: #34495E;
+
 // Custom grayscale base hue variable
 //
 // Changing this to adjusts the hue of the grayscale
@@ -36,8 +38,8 @@ $black: #000;
 
 // Override Bootstrap default state colors
 
-$primary: $gray-700;
-$secondary: $green;
+$primary: $gray-900;
+$secondary: $cool_darl_blue;
 $success: $green;
 $info: $cyan;
 $warning: $yellow;
