@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   match :turquoiserings_confirmation, to: 'funnel#email_squeeze_submit', as: "turquoiserings_confirmation", via: [:post]
 
   post '/create_checkout_session', to: 'funnel#create_checkout_session'
+  get '/real_majik_purchased', to: 'funnel#real_majik_purchased'
+
   post '/confirmation', to: 'funnel#email_squeeze_confirmation'
 
   # Defines the root path route ("/")
