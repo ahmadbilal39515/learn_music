@@ -22898,114 +22898,6 @@ body {
   overflow-x: hidden;
 }
 
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Thin.otf");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-ThinItalic.otf");
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-ExtraLight.otf");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-ExtraLightItalic.otf");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Light.otf");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-LightItalic.otf");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Regular.otf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-RegularItalic.otf");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Medium.otf");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-MediumItalic.otf");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-SemiBold.otf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-SemiBoldItalic.otf");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Bold.otf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-BoldItalic.otf");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-ExtraBold.otf");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-ExtraBoldItalic.otf");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Black.otf");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-BlackItalic.otf");
-  font-weight: 800;
-  font-style: italic;
-}
 #layoutAuthentication {
   display: flex;
   flex-direction: column;
@@ -25120,11 +25012,11 @@ body {
 }
 
 .card-waves .card-body {
-  background-image: url("/assets/img/backgrounds/bg-waves.svg");
+  background-image: url("");
 }
 
 .card-angles .card-body {
-  background-image: url("/assets/img/backgrounds/bg-angles.svg");
+  background-image: url("");
 }
 
 .card-flag {
@@ -26572,7 +26464,7 @@ section {
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] {
   padding-bottom: 198.89807163%;
-  background-image: url("/assets/img/device-mockups/iPhoneX/portrait.png");
+  background-image: url("");
   z-index: initial;
 }
 
@@ -26587,7 +26479,7 @@ section {
 
 .device[data-device=iPhoneX][data-orientation=landscape][data-color=black] {
   padding-bottom: 50.27700831%;
-  background-image: url("/assets/img/device-mockups/iPhoneX/landscape.png");
+  background-image: url("");
   z-index: initial;
 }
 
@@ -26613,7 +26505,7 @@ section {
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black]::after {
   content: "";
-  background-image: url("/assets/img/device-mockups/iPhoneX/portrait_black.png");
+  background-image: url("");
 }
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .button {
@@ -26637,7 +26529,7 @@ section {
 
 .device[data-device=iPhoneX][data-orientation=landscape][data-color=black]::after {
   content: "";
-  background-image: url("/assets/img/device-mockups/iPhoneX/landscape_black.png");
+  background-image: url("");
 }
 
 .device[data-device=iPhoneX][data-orientation=landscape][data-color=black] .button {
@@ -26784,15 +26676,29 @@ section {
     border-right: 0.0625rem solid #e0e5ec;
   }
 }
+.page-header-ui .page-header-ui-content .page-header-ui-title {
+  font-size: 1.5rem;
+}
+
 #main-banner-video {
   width: 100%;
   height: 330px;
 }
 
-.page-header-ui .page-header-ui-content .page-header-ui-title {
-  font-size: 1.5rem;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .page-header-ui {
+    padding-top: 1rem;
+  }
+  .page-header-ui .page-header-ui-content .page-header-ui-title {
+    font-size: 1rem;
+  }
+  #main-banner-video {
+    height: 180px;
+  }
 }
-
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */

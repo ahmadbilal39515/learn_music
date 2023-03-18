@@ -2,12 +2,17 @@
 
 class FunnelController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:create_checkout_session]
+  TR_GREETING_VIDEO_ID = 'jla_sNw568M'
+  TR_THANK_YOU_VIDEO_ID = 'XbLHY4mbhGc'
 
+  RM_GREETING_VIDEO_ID = 'fxLeurQaf0g'
+  RM_THANK_YOU_VIDEO_ID = 'q2kTh3257A8'
   ##########################
   #  Turquoise Rings Funnel
   ##########################
   def email_squeeze
     @person = Person.new
+    @video_id = TR_GREETING_VIDEO_ID
     render layout: 'funnel'
   end
 
@@ -16,6 +21,7 @@ class FunnelController < ApplicationController
 
     if @person.save
       @render_file = true
+      @video_id = TR_THANK_YOU_VIDEO_ID
       flash.now[:notice] = "Thanks for downloading Turquoise Rings! Click the download button below!"
     else
       flash.now[:error] = @person.errors.full_messages[0]
@@ -28,6 +34,7 @@ class FunnelController < ApplicationController
   #  Real Majik Funnel
   ##########################
   def real_majik
+    @video_id = RM_GREETING_VIDEO_ID
     render 'real_majik', layout: 'funnel'
   end
 
@@ -47,8 +54,10 @@ class FunnelController < ApplicationController
   end
 
   def real_majik_purchased
+    @video_id = RM_THANK_YOU_VIDEO_ID
     @render_file = true
     flash.now[:notice] = "Thanks for purchasing Real Majik! Click the download button below!"
+
     render 'real_majik', layout: 'funnel'
   end
 

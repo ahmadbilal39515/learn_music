@@ -1,4 +1,4 @@
-<header class="page-header-ui page-header-ui-dark bg-img-repeat bg-secondary" style="background-image: url('assets/img/backgrounds/pattern-shapes.png')">
+<header class="page-header-ui page-header-ui-dark bg-img-repeat bg-secondary" style="background-image: url('')">
   <div class="page-header-ui-content">
     <div class="container px-5">
       <div class="row gx-5 align-items-center">
@@ -15,8 +15,7 @@
             <iframe
               id="main-banner-video"
               class="embed-responsive-item"
-              src="https://www.youtube.com/embed/fxLeurQaf0g?autoplay=1&controls=0&showinfo=0&modestbranding=1"
-              style="height: 330px;width: 100%;"
+              src="https://www.youtube.com/embed/<%= @video_id %>?autoplay=1&controls=0&showinfo=0&modestbranding=1&rel=0"
             >
             </iframe>
           </div>
@@ -29,29 +28,34 @@
             </div>
           <% end %>
           <div class="card rounded-3 text-lgiht">
-            <div class="card-header py-4">Get your copy of Real Majik!</div>
+            <div class="card-header py-4">
+              <% if @render_file %>
+                Enjoy Real Majik!!
+              <% else %>
+                Get your copy!!
+              <% end %>
+            </div>
             <div class="card-body">
-              <%= form_with model: @person, url: :create_checkout_session, method: :post do |form| %>
-                <div class="row gx-5 mb-3">
-                  <div class="col-md-6">
-                    <%= form.label :first_name, class: 'text-gray-600' %>
-                    <%= form.text_field :first_name, class: 'form-control' %>
+              <% if !@render_file %>
+                <%= form_with model: @person, url: :create_checkout_session, method: :post do |form| %>
+                  <div class="row gx-5 mb-3">
+                    <div class="col-md-6">
+                      <%= form.label :first_name, class: 'text-gray-600' %>
+                      <%= form.text_field :first_name, class: 'form-control' %>
+                    </div>
+                    <div class="col-md-6">
+                      <%= form.label :last_name, class: 'text-gray-600' %>
+                      <%= form.text_field :last_name, class: 'form-control' %>
+                    </div>
                   </div>
-                  <div class="col-md-6">
-                    <%= form.label :last_name, class: 'text-gray-600' %>
-                    <%= form.text_field :last_name, class: 'form-control' %>
+                  <div class="mb-3">
+                    <%= form.label :email, class: 'text-gray-600' %>
+                    <%= form.email_field :email, class: 'form-control' %>
                   </div>
-                </div>
-                <div class="mb-3">
-                  <%= form.label :email, class: 'text-gray-600' %>
-                  <%= form.email_field :email, class: 'form-control' %>
-                </div>
-                <div class="d-grid">
-
-                  <% if !@render_file %>
-                    <%= form.submit "Get your copy of Real Majik!", class: "btn btn-primary fw-500" %>
-                  <% end %>
-                </div>
+                  <div class="d-grid">
+                    <%= form.submit "Get your copy!", class: "btn btn-primary fw-500" %>
+                  </div>
+                <% end %>
               <% end %>
               <% if @render_file %>
                 <a target="_blank" href="https://drive.google.com/file/d/1mVZZ55v0bEHKXJPjohYkXkmZhf-o_KLE/view">
@@ -74,31 +78,32 @@
     </svg>
   </div>
 </header>
-<section class="bg-white py-5">
-  <div class="container px-5">
-    <!--        <div class="text-uppercase-expanded text-end mb-5 text-gray-300">Here's where you can find us</div>-->
-    <div class="row gx-5 brands text-gray-500 align-items-center">
-      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-lg-0">
-        <i class="fa-brands fa-spotify"></i>
-        <div class="icon"><i class="fas fa-fire"></i></div>
-      </div>
-      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-lg-0">
 
-      </div>
-      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-lg-0">
+<!--<section class="bg-white py-5">-->
+<!--  <div class="container px-5">-->
+<!--      <div class="text-uppercase-expanded text-end mb-5 text-gray-300">Here's where you can find us</div>-->
+<!--    <div class="row gx-5 brands text-gray-500 align-items-center">-->
+<!--      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-lg-0">-->
+<!--        <i class="fa-brands fa-spotify"></i>-->
+<!--        <div class="icon"><i class="fas fa-fire"></i></div>-->
+<!--      </div>-->
+<!--      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-lg-0">-->
 
-      </div>
-      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-sm-0">
+<!--      </div>-->
+<!--      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-lg-0">-->
+
+<!--      </div>-->
+<!--      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-sm-0">-->
 
 
-      </div>
-      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+<!--      </div>-->
+<!--      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">-->
 
-      </div>
-      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+<!--      </div>-->
+<!--      <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">-->
 
-      </div>
-    </div>
-  </div>
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 
-</section>
+<!--</section>-->
