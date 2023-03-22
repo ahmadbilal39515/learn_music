@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get '/realmagic', to: 'funnel#real_majik'
   get '/turquoiserings', to: 'funnel#email_squeeze'
-  match :turquoiserings_confirmation, to: 'funnel#email_squeeze_submit', as: "turquoiserings_confirmation", via: [:post]
+  match :turquoiserings_confirmation, to: 'funnel#email_squeeze_submit', as: 'turquoiserings_confirmation', via: [:post]
 
   post '/create_checkout_session', to: 'funnel#create_checkout_session'
   get '/real_majik_purchased', to: 'funnel#real_majik_purchased'

@@ -22,7 +22,7 @@ class FunnelController < ApplicationController
     if @person.save
       @render_file = true
       @video_id = TR_THANK_YOU_VIDEO_ID
-      flash.now[:notice] = "Thanks for downloading Turquoise Rings! Click the download button below!"
+      flash.now[:notice] = 'Thanks for downloading Turquoise Rings! Click the download button below!'
     else
       flash.now[:error] = @person.errors.full_messages[0]
     end
@@ -57,7 +57,7 @@ class FunnelController < ApplicationController
   def real_majik_purchased
     @video_id = RM_THANK_YOU_VIDEO_ID
     @render_file = true
-    flash.now[:notice] = "Thanks for purchasing Real Majik! Click the download button below!"
+    flash.now[:notice] = 'Thanks for purchasing Real Majik! Click the download button below!'
 
     render 'real_majik', layout: 'funnel'
   end
@@ -70,6 +70,7 @@ class FunnelController < ApplicationController
   end
 
   private
+
   def strip_params
     {
       line_items: [{ price: Rails.application.config.stripe_price_id, quantity: 1 }],

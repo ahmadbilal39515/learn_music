@@ -7,7 +7,6 @@ Rails.application.configure do
   config.stripe_price_id = ENV['stripe_price_prod']
   config.stripe_api_key = ENV['stripe_api_key_prod']
 
-
   config.action_mailer.default_url_options = { host: 'https:www.bobcekay.com', port: 3000 }
   # Code is not reloaded between requests.
   config.cache_classes = true

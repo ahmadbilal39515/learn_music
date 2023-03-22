@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "FunnelControllers", type: :request do
-  describe "GET /index" do
+RSpec.describe 'FunnelControllers', type: :request do
+  describe 'GET /index' do
     pending "add some examples (or delete) #{__FILE__}"
   end
 
@@ -22,5 +22,4 @@ RSpec.describe "FunnelControllers", type: :request do
 
   describe 'existing_or_new_person' do
   end
-
 end
