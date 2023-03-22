@@ -17,5 +17,6 @@ Rails.application.routes.draw do
   post '/confirmation', to: 'funnel#email_squeeze_confirmation'
 
   # Defines the root path route ("/")
-  root 'home#main'
+  # root 'home#main'
+  root 'funnel#email_squeeze'
 end
