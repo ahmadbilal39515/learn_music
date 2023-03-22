@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.5'
+ruby '3.0.0'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
@@ -84,7 +84,6 @@ gem 'rubocop', '~> 1.44', require: false
 gem 'cssbundling-rails', '~> 1.1'
 
 gem 'jsbundling-rails', '~> 1.1'
-gem 'sassc-rails'
 
-
-# gem "font-awesome-sass", "~> 6.3.0"
+gem 'devise'
+gem "font-awesome-sass", "~> 6.3.0"

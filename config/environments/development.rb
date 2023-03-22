@@ -7,6 +7,8 @@ Rails.application.configure do
   config.stripe_price_id = ENV['stripe_price_dev']
   config.stripe_api_key = ENV['stripe_api_key_dev']
 
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.

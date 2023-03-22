@@ -6,6 +6,9 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   config.stripe_price_id = ENV['stripe_price_prod']
   config.stripe_api_key = ENV['stripe_api_key_prod']
+
+
+  config.action_mailer.default_url_options = { host: 'https:www.bobcekay.com', port: 3000 }
   # Code is not reloaded between requests.
   config.cache_classes = true
   # Eager load code on boot. This eager loads most of Rails and
