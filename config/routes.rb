@@ -7,8 +7,10 @@ Rails.application.routes.draw do
 
   resource :funnel
 
-  get '/realmagic', to: 'funnel#real_majik'
+  get '/realmajik', to: 'funnel#real_majik'
+
   get '/turquoiserings', to: 'funnel#email_squeeze'
+
   match :turquoiserings_confirmation, to: 'funnel#email_squeeze_submit', as: 'turquoiserings_confirmation', via: [:post]
 
   post '/create_checkout_session', to: 'funnel#create_checkout_session'
@@ -18,5 +20,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root 'home#main'
-  root 'funnel#email_squeeze'
+  root 'funnel#real_majik'
 end

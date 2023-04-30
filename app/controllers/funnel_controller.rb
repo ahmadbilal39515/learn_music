@@ -36,7 +36,7 @@ class FunnelController < ApplicationController
   def real_majik
     @video_id = RM_GREETING_VIDEO_ID
     @person = Person.new
-    render 'real_majik', layout: 'funnel'
+    render 'video_landding_page', layout: 'funnel'
   end
 
   def create_checkout_session
@@ -76,7 +76,7 @@ class FunnelController < ApplicationController
       line_items: [{ price: Rails.application.config.stripe_price_id, quantity: 1 }],
       mode: 'payment',
       success_url: "#{request.base_url}/real_majik_purchased",
-      cancel_url: "#{request.base_url}/real_majik"
+      cancel_url: "#{request.base_url}/realmajik"
     }
   end
 
