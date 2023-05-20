@@ -88,3 +88,4 @@ gem 'jsbundling-rails', '~> 1.1'
 
 gem 'devise'
 
+gem 'font-awesome-rails'
