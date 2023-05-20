@@ -40,18 +40,22 @@ class FunnelController < ApplicationController
   end
 
   def create_checkout_session
-    # content_type 'application/json'
-    @person = existing_or_new_person
+    Stripe.api_key = Rails.application.config.stripe_api_key
+    session = Stripe::Checkout::Session.create(strip_params)
+    redirect_to session.url, allow_other_host: true
 
-    if @person.save
-      # This is your test secret API key.
-      Stripe.api_key = Rails.application.config.stripe_api_key
-      session = Stripe::Checkout::Session.create(strip_params)
-      redirect_to session.url, allow_other_host: true
-    else
-      flash.now[:error] = @person.errors.full_messages[0]
-      render 'real_majik', layout: 'funnel'
-    end
+    # # content_type 'application/json'
+    # @person = existing_or_new_person
+    #
+    # if @person.save
+    #   # This is your test secret API key.
+    #   Stripe.api_key = Rails.application.config.stripe_api_key
+    #   session = Stripe::Checkout::Session.create(strip_params)
+    #   redirect_to session.url, allow_other_host: true
+    # else
+    #   flash.now[:error] = @person.errors.full_messages[0]
+    #   render 'real_majik', layout: 'funnel'
+    # end
   end
 
   def real_majik_purchased

@@ -26703,6 +26703,13 @@ section {
   font-family: Montserrat, Helvetica, sans-serif !important;
 }
 
+.content-card {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  align-content: center;
+}
+
 #show-modal-button {
   height: 50px;
   width: 100%;
@@ -26755,6 +26762,25 @@ section {
 .everything-you-get .everything-you-get-body {
   border-width: 1px;
   border-style: solid;
+}
+
+.bonus-offer-image-container {
+  text-align: center;
+}
+
+#funnel-footer {
+  border-width: 10px 0 0 0;
+  border-style: solid;
+  text-align: center;
+  font-family: Montserrat, Helvetica, sans-serif !important;
+}
+#funnel-footer .footer-brand {
+  font-size: 2em;
+  margin: auto;
+}
+#funnel-footer .footer-links {
+  display: inline-block;
+  padding-right: 30px;
 }
 
 #main-banner-video {

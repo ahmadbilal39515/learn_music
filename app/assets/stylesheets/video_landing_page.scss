@@ -24,6 +24,13 @@
   }
 }
 
+.content-card {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  align-content: center;
+}
+
 #show-modal-button {
   height: 50px;
   width: 100%;
@@ -86,4 +93,23 @@
   }
 }
 
+.bonus-offer-image-container {
+  text-align: center;
+}
+
+
+#funnel-footer {
+  border-width: 10px 0 0 0;
+  border-style: solid;
+  text-align: center;
+  font-family: Montserrat, Helvetica, sans-serif !important;
+  .footer-brand {
+    font-size: 2em;
+    margin: auto;
+  }
+  .footer-links {
+    display: inline-block;
+    padding-right: 30px;
+  }
+}
 
