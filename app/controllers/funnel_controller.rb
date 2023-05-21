@@ -79,8 +79,8 @@ class FunnelController < ApplicationController
     {
       line_items: [{ price: Rails.application.config.stripe_price_id, quantity: 1 }],
       mode: 'payment',
-      success_url: "#{request.base_url}/real_majik_purchased",
-      cancel_url: "#{request.base_url}/realmajik"
+      success_url: "https://drive.google.com/drive/folders/1JFJmS1U9IR_OSn_CR1tn4iqdxmTnZCku?usp=sharing",
+      cancel_url: "#{request.base_url}"
     }
   end
 
