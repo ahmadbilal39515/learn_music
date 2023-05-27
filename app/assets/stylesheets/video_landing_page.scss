@@ -79,8 +79,10 @@
   }
 }
 
-.final-price {
+.everything-you-get-final-price {
   font-size: 200px;
+  text-align: center;
+  color: rgb(71, 117, 185);
 }
 
 
@@ -239,6 +241,34 @@
   border-top-width: 2px;
 }
 
+.everything-you-get-body-item-name {
+  text-align: left;
+  color: rgb(45, 45, 45);
+  font-size: 24px;
+}
+
+.everything-you-get-body-item-value {
+  text-align: right;
+  font-size: 24px;
+  color: rgb(228, 59, 44);
+}
+
+.everything-you-get-grand-total-value {
+  text-align: center;
+  font-size: 44px;
+  color: rgb(228, 59, 44);
+}
+
+.everything-you-get-body-secondary-text {
+  text-align: center;
+  color: rgb(45, 45, 45);
+  font-size: 34px;
+}
+
+.everything-you-get-final-price {
+
+}
+
 @media screen and (max-width: 800px) {
 
 
@@ -255,7 +285,7 @@
     font-size: 16px;
   }
 
-  .final-price {
+  .everything-you-get-final-price {
     font-size: 50px;
   }
 
@@ -270,11 +300,30 @@
     }
   }
 
+  .everything-you-get-body-item-name {
+    text-align: center;
+    font-size: 18px;
+  }
+  .everything-you-get-body-item-value {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .everything-you-get-grand-total-value {
+    font-size: 26px;
+  }
+
+  .everything-you-get-body-secondary-text {
+    font-size: 26px;
+  }
+
   .bonus-offer-item-header,
   .bonus-offer-item-body {
     width: 100%;
   }
-
+  .innerContent {
+    padding: 0px !important;
+  }
 
   #show-modal-button {
     height: 100px;
