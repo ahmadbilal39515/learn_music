@@ -1,14 +1,14 @@
 <header class="page-header-ui page-header-ui-dark bg-img-repeat bg-secondary" style="background-image: url('')">
   <div class="page-header-ui-content">
-    <div class="container px-5">
-      <div class="row gx-5 align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
         <div class="col-lg-12" id="video-landing-header">
           <h1 class="page-header-ui-title">
             “Get Ready to Rock Your World with Real Majik - The Ultimate Album of the Year!“
           </h1>
         </div>
       </div>
-      <div class="row gx-5 align-items-center">
+      <div class="row align-items-center">
         <div class="col-md-8 offset-md-2">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe
@@ -20,16 +20,7 @@
           </div>
           <p class="page-header-ui-text"></p>
         </div>
-        <div class="col-8 offset-md-2">
-<!--          <button id="show-modal-button" type="button" onclick="new Modal($('#userDataModal')).show()" class="btn btn-dark">-->
-<!--            <i id='cart-icon' class="bi bi-cart"></i>-->
-<!--            <p>YES! RESERVE MY COPY OF REAL MAJIK NOW!</p>-->
-<!--          </button>-->
-
-          <%= form_with model: @person, url: :create_checkout_session, method: :post do |form| %>
-            <%= form.submit "YES! RESERVE MY COPY OF REAL MAJIK NOW!", class: "btn btn-dark", id: 'show-modal-button', formtarget: "_blank" %>
-          <% end %>
-        </div>
+        <%= render :partial => "shared/funnel/purchase_button" %>
       </div>
     </div>
   </div>
@@ -63,40 +54,40 @@
 
 <section>
   <div class="bonus-offer container">
-    <div class="row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 10px; padding-bottom: 10px; margin: 0px auto; width: 65%; max-width: 100%; outline: none; background-color: rgb(71, 117, 185); border-color: rgb(71, 117, 185);">
+    <div class="bonus-offer-item-header row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="">
       <div id="col-full-117" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="de ui-droppable de-editable" id="headline-85828" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-header-text ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" style="" data-bold="inherit" contenteditable="false">
               <font color="#ffffff">
-                <b>Bonus #1 - Making of Real Majik E-book</b>
+                <b>Bonus #1 - Real Majik E-book</b>
               </font>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="bonus-offer-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-156" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone" style="padding-top: 20px; padding-bottom: 20px; margin: 0px auto; width: 65%; max-width: 100%; outline: none; border-color: rgb(71, 117, 185);">
+    <div class="bonus-offer-item-body bonus-offer-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-156" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone" style="">
       <div id="col-full-117-168-174" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="de ui-droppable de-editable" id="headline-88306-154" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
-              <b>
+            <div class="bonus-offer-item-body-headline ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" data-bold="inherit" contenteditable="false">
+              <b class="">
                 "Behind the Scenes of Real Majik - Get a FREE E-Book on the Making of the Most Epic Rock Album of
                 the Year!"
               </b>
             </div>
           </div>
           <div class="de ui-droppable de-editable" id="headline-52844-156" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 10px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-total-value ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" data-bold="inherit" contenteditable="false">
               <b>Total Value: $34.00</b></div>
           </div>
           <div class="bonus-offer-image-container de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="img-57663" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 5px; outline: none; cursor: pointer;" aria-disabled="false">
             <img src="<%= image_path('makin_real_majik_e_book.jpg') %>" class="elIMG ximg" alt="Bonus #2 - Hook, Story, Offer" width="80%" tabindex="0">
           </div>
           <div class="de ui-droppable de-editable" id="headline-15790-110-134" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" style="text-align: left; color: rgb(45, 45, 45); font-size: 20px;" data-bold="inherit" contenteditable="false">
-              <div>
+            <div class="bonus-offer-item-body-description ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" data-bold="inherit" contenteditable="false">
+              <div class="">
                 In this captivating E-book, you'll be taken on a journey behind the scenes of the making of
                 <b>Real Majik</b>. Follow the journey of Bob Cekay as he navigates the highs and lows of creating an
                 epic rock masterpiece.
@@ -104,7 +95,7 @@
             </div>
           </div>
           <div class="de ui-droppable de-editable" id="headline-28919" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_22" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-headline ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_22" data-bold="inherit" contenteditable="false">
               <b>Get This For FREE When You Order Your Copy Of <i>Real Majik</i> Today!&nbsp;</b>
             </div>
           </div>
@@ -116,38 +107,38 @@
 
 <section>
   <div class="bonus-offer container">
-    <div class="bonus-offer-header row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 10px; padding-bottom: 10px; margin: 0px auto; width: 65%; max-width: 100%; outline: none; background-color: rgb(71, 117, 185); border-color: rgb(71, 117, 185);">
+    <div class="bonus-offer-item-header bonus-offer-header row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row">
       <div id="col-full-117" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="de ui-droppable de-editable" id="headline-85828" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-header-text ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" data-bold="inherit" contenteditable="false">
               <font color="#ffffff">
-                <b>Bonus #2 - Turquoise Rings Digital Download</b>
+                <b>Bonus #2 - Turquoise Rings</b>
               </font>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="bonus-offer-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-156" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone" style="padding-top: 20px; padding-bottom: 20px; margin: 0px auto; width: 65%; max-width: 100%; outline: none; border-color: rgb(71, 117, 185);">
+    <div class="bonus-offer-item-body bonus-offer-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-156" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone">
       <div id="col-full-117-168-174" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="de ui-droppable de-editable" id="headline-88306-154" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
-              <b>
+            <div class="bonus-offer-item-body-headline ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" data-bold="inherit" contenteditable="false">
+              <b class="">
                 "Experience the Serene Beauty of 'Turquoise Rings' - A Captivating New Song That Will Steal Your Heart!"
               </b>
             </div>
           </div>
           <div class="de ui-droppable de-editable" id="headline-52844-156" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 10px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-total-value ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" data-bold="inherit" contenteditable="false">
               <b>Total Value: $5.00</b></div>
           </div>
           <div class="bonus-offer-image-container de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="img-57663" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 5px; outline: none; cursor: pointer;" aria-disabled="false">
             <img src="<%= image_path('turquoise_rings_cover.jpeg') %>" class="elIMG ximg" alt="Bonus #2 - Hook, Story, Offer" width="80%" tabindex="0">
           </div>
           <div class="de ui-droppable de-editable" id="headline-15790-110-134" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" style="text-align: left; color: rgb(45, 45, 45); font-size: 20px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-description ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" data-bold="inherit" contenteditable="false">
               <div>
                 <b>"Turquoise Rings"</b> is an electrifying rock song that will leave you breathless. From the moment
                 the opening guitar riff kicks in, you'll be hooked on the raw energy and emotion that pours out of every
@@ -156,7 +147,7 @@
             </div>
           </div>
           <div class="de ui-droppable de-editable" id="headline-28919" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_22" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-headline ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_22" data-bold="inherit" contenteditable="false">
               <b>Get This For FREE When You Order Your Copy Of <i>Real Majik</i> Today!&nbsp;</b>
             </div>
           </div>
@@ -168,38 +159,38 @@
 
 <section>
   <div class="bonus-offer container">
-    <div class="bonus-offer-header row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 10px; padding-bottom: 10px; margin: 0px auto; width: 65%; max-width: 100%; outline: none; background-color: rgb(71, 117, 185); border-color: rgb(71, 117, 185);">
+    <div class="bonus-offer-item-header bonus-offer-header row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row">
       <div id="col-full-117" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="de ui-droppable de-editable" id="headline-85828" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-header-text ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" data-bold="inherit" contenteditable="false">
               <font color="#ffffff">
-                <b>Bonus #3 - On The Road Digital Download</b>
+                <b>Bonus #3 - On The Road</b>
               </font>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="bonus-offer-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-156" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone" style="padding-top: 20px; padding-bottom: 20px; margin: 0px auto; width: 65%; max-width: 100%; outline: none; border-color: rgb(71, 117, 185);">
+    <div class="bonus-offer-item-body bonus-offer-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-156" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone">
       <div id="col-full-117-168-174" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="de ui-droppable de-editable" id="headline-88306-154" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-headline ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" data-bold="inherit" contenteditable="false">
               <b>
                 "Rev Up Your Engines with 'On the Road' - The Ultimate Rock Anthem for Adventure Seekers Everywhere!"
               </b>
             </div>
           </div>
           <div class="de ui-droppable de-editable" id="headline-52844-156" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 10px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-total-value ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" data-bold="inherit" contenteditable="false">
               <b>Total Value: $5.00</b></div>
           </div>
           <div class="bonus-offer-image-container de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="img-57663" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 5px; outline: none; cursor: pointer;" aria-disabled="false">
             <img src="<%= image_path('on_the_road_cover.JPEG') %>" class="elIMG ximg" alt="Bonus #2 - Hook, Story, Offer" width="80%" tabindex="0">
           </div>
           <div class="de ui-droppable de-editable" id="headline-15790-110-134" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" style="text-align: left; color: rgb(45, 45, 45); font-size: 20px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-description ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" data-bold="inherit" contenteditable="false">
               <div>
                 <b>"On the Road"</b> is a high-energy rock song that's sure to get your heart racing. With its driving
                 beat and
@@ -208,7 +199,7 @@
             </div>
           </div>
           <div class="de ui-droppable de-editable" id="headline-28919" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_22" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-headline ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_22" data-bold="inherit" contenteditable="false">
               <b>Get This For FREE When You Order Your Copy Of <i>Real Majik</i> Today!&nbsp;</b>
             </div>
           </div>
@@ -220,24 +211,24 @@
 
 <section>
   <div class="bonus-offer container">
-    <div class="bonus-offer-header row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 10px; padding-bottom: 10px; margin: 0px auto; width: 65%; max-width: 100%; outline: none; background-color: rgb(71, 117, 185); border-color: rgb(71, 117, 185);">
+    <div class="bonus-offer-item-header bonus-offer-header row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row">
       <div id="col-full-117" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="de ui-droppable de-editable" id="headline-85828" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-header-text ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" data-bold="inherit" contenteditable="false">
               <font color="#ffffff">
-                <b>Bonus #4 - I've Been Away Digital Download</b>
+                <b>Bonus #4 - I've Been Away</b>
               </font>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="bonus-offer-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-156" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone" style="padding-top: 20px; padding-bottom: 20px; margin: 0px auto; width: 65%; max-width: 100%; outline: none; border-color: rgb(71, 117, 185);">
+    <div class="bonus-offer-item-body bonus-offer-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-156" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone">
       <div id="col-full-117-168-174" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="de ui-droppable de-editable" id="headline-88306-154" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-headline ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" data-bold="inherit" contenteditable="false">
               <b>
                 "Experience the Emotion and Power of 'I've Been Away' - A Hauntingly Beautiful New Song That Will Leave
                 You Breathless!"
@@ -245,14 +236,14 @@
             </div>
           </div>
           <div class="de ui-droppable de-editable" id="headline-52844-156" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 10px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-total-value ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" style="" data-bold="inherit" contenteditable="false">
               <b>Total Value: $5.00</b></div>
           </div>
           <div class="bonus-offer-image-container de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="img-57663" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 5px; outline: none; cursor: pointer;" aria-disabled="false">
             <img src="<%= image_path('ive_been_away_cover.jpg') %>" class="elIMG ximg" alt="Bonus #2 - Hook, Story, Offer" width="80%" tabindex="0">
           </div>
           <div class="de ui-droppable de-editable" id="headline-15790-110-134" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" style="text-align: left; color: rgb(45, 45, 45); font-size: 20px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-description ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" data-bold="inherit" contenteditable="false">
               <div>
                 <b>"I've Been Away"</b> is a hauntingly beautiful rock song that will take you on an emotional journey.
                 From the opening chords to the final notes, this track is a masterclass in modern rock music.
@@ -260,7 +251,7 @@
             </div>
           </div>
           <div class="de ui-droppable de-editable" id="headline-28919" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_22" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="bonus-offer-item-body-headline ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_22" data-bold="inherit" contenteditable="false">
               <b>Get This For FREE When You Order Your Copy Of <i>Real Majik</i> Today!&nbsp;</b>
             </div>
           </div>
@@ -270,28 +261,20 @@
   </div>
 </section>
 
-<section class="buy-button">
-  <div class="page-header-ui-content">
-    <div class="container px-5">
-      <div class="row gx-5 align-items-center">
-        <div class="col-8 offset-md-2">
-          <button id="show-modal-button" type="button" onclick="new Modal($('#userDataModal')).show()" class="btn btn-dark">
-            <i id='cart-icon' class="bi bi-cart"></i>
-            <p>YES! RESERVE MY COPY OF REAL MAJIK NOW!</p>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="container">
+  <%= render :partial => "shared/funnel/purchase_button" %>
+</div>
 
 <section>
   <div class="container">
     <div id="col-full-123" class="col-md-8 offset-md-2 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
       <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
         <div class="de ui-droppable de-editable" id="headline-96042" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="margin-top: 30px; outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-          <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" style="text-align: left; color: rgb(45, 45, 45); font-size: 20px;" data-bold="inherit" contenteditable="false">
-            <div>Like I mentioned before, <b>all the bonus content is free</b>. All I ask is that you help me cover the recording costs of Real Majik for $9.99 US</div>
+          <div class="no-catch-description ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" style="" data-bold="inherit" contenteditable="false">
+            <div>
+              Like I mentioned before, <b>all the bonus content is free</b>. All I ask is that you help me cover the
+              recording costs of Real Majik for $9.99 US
+            </div>
             <div><br></div>
             <div>Oh, and in case you're wondering...</div>
             <div><br></div>
@@ -303,7 +286,7 @@
           </div>
         </div>
         <div class="de ui-droppable de-editable" id="headline-30406" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-          <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_35" style="text-align: center; color: rgb(45, 45, 45); font-size: 52px;" data-bold="inherit" contenteditable="false">
+          <div class="no-catch-header ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_35" data-bold="inherit" contenteditable="false">
             <b>There Is NO CATCH!</b></div>
         </div>
         <div class="de elSeperator elMargin0 ui-droppable de-editable" id="divider-33698" data-de-type="divider" data-de-editing="false" data-title="Divider" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
@@ -312,7 +295,7 @@
           </div>
         </div>
         <div class="de ui-droppable de-editable" id="headline-18020" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-          <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" style="text-align: left; color: rgb(45, 45, 45); font-size: 20px;" data-bold="inherit" contenteditable="false">
+          <div class="no-catch-description ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" data-bold="inherit" contenteditable="false">
             <div>I know there are some websites out there that offer you something cool, but then stick you.
             </div>
             <div><br></div>
@@ -324,33 +307,35 @@
             <div>Well, there are actually a few reasons...</div>
           </div>
         </div>
-        <div class="de elBullet elMargin0 ui-droppable mfs_16 de-editable" id="list-39132" data-de-type="list" data-de-editing="false" data-title="nicebullets" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="margin-top: 20px; outline: none; cursor: pointer; margin-left: 24px;" data-margin-top="8px" aria-disabled="false">
+        <div class="no-catch-description-list de elBullet elMargin0 ui-droppable mfs_16 de-editable" id="list-39132" data-de-type="list" data-de-editing="false" data-title="nicebullets" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="" data-margin-top="8px" aria-disabled="false">
           <ul class="ne elBulletList elBulletListNew elBulletList2 listBorder0" data-bold="inherit" data-gramm="false" contenteditable="false">
-            <li style="font-size: 18px;">
+            <li>
               <i class="fa fa-fw fa-check" contenteditable="false"></i><b>It's my way of saying thank you </b>
               for giving my music a chance.
             </li>
-            <li style="font-size: 18px; margin-top: 8px;">
+            <li>
               <i class="fa fa-fw fa-check"></i><b>&ZeroWidthSpace;</b>
-              <b>I hope to create a more immersive and engaging experience.</b> By including bonus content for you listeners.
+              <b>I hope to create a more immersive and engaging experience.</b> By including bonus content for you
+              listeners.
             </li>
-            <li style="font-size: 18px; margin-top: 8px;">
+            <li>
               <i class="fa fa-fw fa-check"></i><b style="color: inherit;">&ZeroWidthSpace;I get some one of my
               music in your hands, </b><span style="color: inherit;">and when you see how awesome it is, it should get you excited to buy other tunes from me in the future.</span>
             </li>
-            <li style="font-size: 18px; margin-top: 8px;">
+            <li>
               <i class="fa fa-fw fa-check"></i>
               <b>&ZeroWidthSpace;I'm kinda a show off... </b>
-              We believe that music is meant to be shared, and we want to give our fans even more reasons to love our album. :)<br>
+              We believe that music is meant to be shared, and we want to give our fans even more reasons to love our
+              album. :)<br>
             </li>
           </ul>
         </div>
         <div class="de ui-droppable de-editable" id="headline-44284" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-          <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_35" style="text-align: center; color: rgb(45, 45, 45); font-size: 52px;" data-bold="inherit" contenteditable="false">
+          <div class="no-catch-header ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_35" data-bold="inherit" contenteditable="false">
             <b>Time Is Of The Essence...</b></div>
         </div>
         <div class="de ui-droppable de-editable" id="headline-25313" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-          <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" style="text-align: left; color: rgb(45, 45, 45); font-size: 20px;" data-bold="inherit" contenteditable="false">
+          <div class="no-catch-description ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" data-bold="inherit" contenteditable="false">
             <div>Here's why...</div>
             <div><br></div>
             <div>I'm already cranking away on my next album and once that puppy is done this deal is gonzo!&nbsp;&nbsp;
@@ -366,25 +351,25 @@
             <div class="elDividerInner" data-align="center" data-width-border="75" data-height-border="2" style="border-color: rgb(70, 117, 185);"></div>
           </div>
         </div>
-<!--        <div class="de ui-droppable de-editable" id="headline-20613" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">-->
-<!--          <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_35" style="text-align: center; color: rgb(45, 45, 45); font-size: 52px;" data-bold="inherit" contenteditable="false">-->
-<!--            <b>Here Is My "You've Gotta Be Crazy" Guarantee</b></div>-->
-<!--        </div>-->
-<!--        <div class="de elSeperator elMargin0 ui-droppable de-editable" id="divider-74696" data-de-type="divider" data-de-editing="false" data-title="Divider" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">-->
-<!--          <div class="elDivider elDividerStyle1 padding10-top padding10-bottom">-->
-<!--            <div class="elDividerInner" data-align="center" data-width-border="75" data-height-border="2" style="border-color: rgb(70, 117, 185);"></div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="de ui-droppable de-editable" id="headline-11371" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">-->
-<!--          <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" style="text-align: left; color: rgb(45, 45, 45); font-size: 20px;" data-bold="inherit" contenteditable="false">-->
-<!--            <div>I'm going to <b>100% guarantee that you'll love this album</b>, or I'll return your $9.99 and let you keep-->
-<!--              the album anyway.-->
-<!--            </div>-->
-<!--            <div><br></div>-->
-<!--            <div>That's right. Just email me or call the number on your receipt and I'll give you back your money with no question asked.-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
+        <!--        <div class="de ui-droppable de-editable" id="headline-20613" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">-->
+        <!--          <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_35" style="text-align: center; color: rgb(45, 45, 45); font-size: 52px;" data-bold="inherit" contenteditable="false">-->
+        <!--            <b>Here Is My "You've Gotta Be Crazy" Guarantee</b></div>-->
+        <!--        </div>-->
+        <!--        <div class="de elSeperator elMargin0 ui-droppable de-editable" id="divider-74696" data-de-type="divider" data-de-editing="false" data-title="Divider" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">-->
+        <!--          <div class="elDivider elDividerStyle1 padding10-top padding10-bottom">-->
+        <!--            <div class="elDividerInner" data-align="center" data-width-border="75" data-height-border="2" style="border-color: rgb(70, 117, 185);"></div>-->
+        <!--          </div>-->
+        <!--        </div>-->
+        <!--        <div class="de ui-droppable de-editable" id="headline-11371" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">-->
+        <!--          <div class="ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" style="text-align: left; color: rgb(45, 45, 45); font-size: 20px;" data-bold="inherit" contenteditable="false">-->
+        <!--            <div>I'm going to <b>100% guarantee that you'll love this album</b>, or I'll return your $9.99 and let you keep-->
+        <!--              the album anyway.-->
+        <!--            </div>-->
+        <!--            <div><br></div>-->
+        <!--            <div>That's right. Just email me or call the number on your receipt and I'll give you back your money with no question asked.-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--        </div>-->
       </div>
     </div>
   </div>
@@ -392,11 +377,11 @@
 
 <section>
   <div class="container everything-you-get">
-    <div class="everything-you-get-header row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 10px; padding-bottom: 10px; margin: 0px auto; width: 65%; max-width: 100%; outline: none; background-color: rgb(71, 117, 185); border-color: rgb(71, 117, 185);">
+    <div class="everything-you-get-header row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="">
       <div id="col-full-117" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="de ui-droppable de-editable" id="headline-85828" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" style="text-align: center; color: rgb(45, 45, 45); font-size: 34px;" data-bold="inherit" contenteditable="false">
+            <div class="everything-you-get-header ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" data-bold="inherit" contenteditable="false">
               <font color="#ffffff">
                 <b>Let Me Show You EVERYTHING You Get When You Order 'Real Majik' Today!</b>
               </font>
@@ -405,7 +390,7 @@
         </div>
       </div>
     </div>
-    <div class="everything-you-get-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-132" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone" style="padding-top: 20px; padding-bottom: 20px; margin: 0px auto; width: 65%; max-width: 100%; outline: none; border-color: rgb(71, 117, 185);">
+    <div class="everything-you-get-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-132" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone" style="">
       <div id="col-full-117-168-101" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
           <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection" id="section--86300" data-title="theStackReplacer" data-block-color="0074C7" style="padding-top: 20px; padding-bottom: 20px; outline: none;" data-trigger="none" data-animate="fade" data-delay="500">
@@ -431,27 +416,27 @@
                   </div>
                 </div>
               </div>
-<!--              <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row-121" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row - Clone" style="padding: 5px 0px; margin: 0px; outline: none;">-->
-<!--                <div id="col-left-163-145-164" class="innerContent col_left ui-resizable col-md-8" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">-->
-<!--                  <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">-->
-<!--                    <div class="de ui-droppable de-editable" id="headline-46417-172-128" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">-->
-<!--                      <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_18" style="text-align: left; color: rgb(45, 45, 45); font-size: 24px;" data-bold="inherit" contenteditable="false">-->
-<!--                        <i class="fa_prepended fas fa-check" contenteditable="false" style="color: rgb(71, 117, 185);"></i><b>&nbsp; </b>-->
-<!--                        <b><i>Making of 'Real Majik'</i></b> Audio Book-->
-<!--                      </div>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--                <div id="col-right-142-179-117" class="innerContent col_right ui-resizable col-md-4" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">-->
-<!--                  <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">-->
-<!--                    <div class="de ui-droppable de-editable" id="headline-35897-172-101" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">-->
-<!--                      <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_18" style="text-align: right; color: rgb(45, 45, 45); font-size: 24px;" data-bold="inherit" contenteditable="false">-->
-<!--                        <b>&nbsp;</b><b>($17.00 Value)</b>-->
-<!--                      </div>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
+              <!--              <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row-121" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row - Clone" style="padding: 5px 0px; margin: 0px; outline: none;">-->
+              <!--                <div id="col-left-163-145-164" class="innerContent col_left ui-resizable col-md-8" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">-->
+              <!--                  <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">-->
+              <!--                    <div class="de ui-droppable de-editable" id="headline-46417-172-128" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">-->
+              <!--                      <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_18" style="text-align: left; color: rgb(45, 45, 45); font-size: 24px;" data-bold="inherit" contenteditable="false">-->
+              <!--                        <i class="fa_prepended fas fa-check" contenteditable="false" style="color: rgb(71, 117, 185);"></i><b>&nbsp; </b>-->
+              <!--                        <b><i>Making of 'Real Majik'</i></b> Audio Book-->
+              <!--                      </div>-->
+              <!--                    </div>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--                <div id="col-right-142-179-117" class="innerContent col_right ui-resizable col-md-4" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">-->
+              <!--                  <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">-->
+              <!--                    <div class="de ui-droppable de-editable" id="headline-35897-172-101" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">-->
+              <!--                      <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_18" style="text-align: right; color: rgb(45, 45, 45); font-size: 24px;" data-bold="inherit" contenteditable="false">-->
+              <!--                        <b>&nbsp;</b><b>($17.00 Value)</b>-->
+              <!--                      </div>-->
+              <!--                    </div>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--              </div>-->
               <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row-152" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row - Clone - Clone" style="padding: 5px 0px; margin: 0px; outline: none;">
                 <div id="col-left-163-145-179-126" class="innerContent col_left ui-resizable col-md-8" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
                   <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
@@ -547,7 +532,7 @@
               <b>Get Your Copy Today For</b></div>
           </div>
           <div class="de ui-droppable de-editable" id="headline-36885-186" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
-            <div class="ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing mfs_72 lh0" style="text-align: center; color: rgb(45, 45, 45); font-size: 200px;" data-bold="inherit" contenteditable="false">
+            <div class="final-price ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing mfs_72 lh0" style="text-align: center; color: rgb(45, 45, 45);" data-bold="inherit" contenteditable="false">
               <b>$9.99</b></div>
           </div>
           <div class="de ui-droppable de-editable" id="headline-58768-110" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
@@ -560,24 +545,9 @@
   </div>
 </section>
 
-<section class="buy-button">
-  <div class="page-header-ui-content">
-    <div class="container px-5">
-      <div class="row gx-5 align-items-center">
-        <div class="col-8 offset-md-2">
-<!--          <button id="show-modal-button" type="button" onclick="new Modal($('#userDataModal')).show()" class="btn btn-dark">-->
-<!--            <i id='cart-icon' class="bi bi-cart"></i>-->
-<!--            <p>YES! RESERVE MY COPY OF REAL MAJIK NOW!</p>-->
-<!--          </button>-->
-
-          <%= form_with model: @person, url: :create_checkout_session, method: :post do |form| %>
-            <%= form.submit "YES! RESERVE MY COPY OF REAL MAJIK NOW!", class: "btn btn-dark", id: 'show-modal-button', formtarget: "_blank" %>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="container">
+  <%= render :partial => "shared/funnel/purchase_button" %>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="userDataModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -591,7 +561,7 @@
       </div>
       <div class="modal-body">
         <%= form_with model: @person, url: :create_checkout_session, method: :post do |form| %>
-          <div class="row gx-5 mb-3">
+          <div class="row mb-3">
             <div class="col-md-6">
               <%= form.label :first_name, class: 'text-gray-600' %>
               <%= form.text_field :first_name, class: 'form-control' %>

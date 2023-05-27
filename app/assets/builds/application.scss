@@ -26755,13 +26755,34 @@ section {
   position: absolute;
 }
 
+.final-price {
+  font-size: 200px;
+}
+
 .everything-you-get {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.everything-you-get .everything-you-get-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px auto;
+  width: 65%;
+  max-width: 100%;
+  outline: none;
+  background-color: rgb(71, 117, 185);
+  border-color: rgb(71, 117, 185);
+}
 .everything-you-get .everything-you-get-body {
   border-width: 1px;
   border-style: solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px auto;
+  width: 65%;
+  max-width: 100%;
+  outline: none;
+  border-color: rgb(71, 117, 185);
 }
 
 .bonus-offer-image-container {
@@ -26783,12 +26804,180 @@ section {
   padding-right: 30px;
 }
 
+.bonus-offer-item-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px auto;
+  width: 65%;
+  max-width: 100%;
+  outline: none;
+  background-color: rgb(71, 117, 185);
+  border-color: rgb(71, 117, 185);
+}
+
+.bonus-offer-item-header-text {
+  text-align: center;
+  color: rgb(45, 45, 45);
+  font-size: 34px;
+}
+
+.bonus-offer-item-body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px auto;
+  width: 65%;
+  max-width: 100%;
+  outline: none;
+  border-color: rgb(71, 117, 185);
+}
+
+.bonus-offer-item-body-headline {
+  text-align: center;
+  color: rgb(45, 45, 45);
+  font-size: 34px;
+}
+
+.bonus-offer-item-body-description {
+  text-align: left;
+  color: rgb(45, 45, 45);
+  font-family: Montserrat, Helvetica, sans-serif !important;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 15px;
+}
+
+.bonus-offer-item-body-total-value {
+  text-align: center;
+  color: rgb(228, 59, 44);
+  font-size: 34px;
+}
+
+.everything-you-get-header {
+  text-align: center;
+  color: rgb(45, 45, 45);
+  font-size: 34px;
+  letter-spacing: -1px;
+}
+
+.no-catch-description {
+  text-align: left;
+  color: rgb(45, 45, 45);
+  font-size: 20px;
+}
+
+.no-catch-description-list {
+  color: #2d2d2d;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+  margin-left: 24px;
+  font-size: 18px;
+  position: relative;
+}
+.no-catch-description-list ul {
+  list-style-type: none;
+}
+.no-catch-description-list li {
+  margin-top: 8px;
+}
+
+.no-catch-header {
+  text-align: center;
+  color: rgb(45, 45, 45);
+  font-size: 52px;
+}
+
+[data-title*=nicebullets] li:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #4775b9;
+  border-radius: 50px;
+  box-shadow: rgba(71, 117, 185, 0.25) 0 0 0 6px;
+  margin-top: 6px;
+  left: 0;
+}
+
+.elDivider {
+  display: block;
+}
+
+.elDividerInner {
+  border-color: rgb(70, 117, 185);
+  border-top-style: solid;
+  width: 75%;
+  margin-left: 12%;
+  border-top-width: 2px;
+}
+
+@media screen and (max-width: 800px) {
+  .no-catch-header {
+    font-size: 35px;
+  }
+  .landing-page-navbar .navbar-brand {
+    font-size: 1.5em;
+    margin: auto;
+  }
+  .bonus-offer-item-body-description {
+    font-size: 16px;
+  }
+  .final-price {
+    font-size: 50px;
+  }
+  .everything-you-get .everything-you-get-header,
+  .everything-you-get .everything-you-get-body {
+    width: 100%;
+  }
+  .bonus-offer-item-header,
+  .bonus-offer-item-body {
+    width: 100%;
+  }
+  #show-modal-button {
+    height: 100px;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  .bonus-offer-item-body-headline {
+    font-size: 25px;
+    letter-spacing: -1px;
+    line-height: 1em;
+  }
+  .bonus-offer-item-header-text {
+    font-size: 22px;
+  }
+  .bonus-offer-item-body-total-value {
+    font-size: 25px;
+  }
+  .everything-you-get-header {
+    text-align: center;
+    color: rgb(45, 45, 45);
+    font-size: 22px;
+  }
+  .no-catch-description {
+    font-size: 16px;
+  }
+  .no-catch-description-list {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .landing-page-navbar .navbar-brand {
+    font-size: 1.25em;
+    margin: auto;
+  }
+}
 #main-banner-video {
   width: 100%;
   height: 550px;
 }
 
-@media only screen and (max-width: 600px) {
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: Montserrat, Helvetica, sans-serif !important;
+}
+
+@media only screen and (max-width: 800px) {
   body {
     background-color: lightblue;
   }
@@ -26796,10 +26985,24 @@ section {
     padding-top: 1rem;
   }
   .page-header-ui .page-header-ui-content .page-header-ui-title {
-    font-size: 1rem;
+    font-size: 2.5rem;
   }
   #main-banner-video {
-    height: 180px;
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .page-header-ui {
+    padding-top: 1.5rem;
+  }
+  .page-header-ui .page-header-ui-content .page-header-ui-title {
+    font-size: 1.5rem;
+  }
+  #main-banner-video {
+    height: 280px;
   }
 }
 /* GLOBAL STYLES
