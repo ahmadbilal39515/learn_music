@@ -30,15 +30,15 @@
     }
 
     .page-header-ui-text {
-        @extend .text-white-50;
+        @extend .text-white-50 !optional;
 
         a {
-            @extend .text-white-75;
+            @extend .text-white-75 !optional;
         }
     }
 
     .btn-link {
-        @extend .text-light;
+        @extend .text-light !optional;
     }
 }
 

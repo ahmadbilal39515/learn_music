@@ -28,32 +28,32 @@
 
     flex-shrink: 0;
 
-    height: calc((#{$btn-font-size} * #{$btn-line-height}) + (#{$btn-padding-y} * 2) + (#{$btn-border-width * 2})) !important;
-    width: calc((#{$btn-font-size} * #{$btn-line-height}) + (#{$btn-padding-y} * 2) + (#{$btn-border-width * 2})) !important;
+    //height: calc((#{$btn-font-size} * #{$btn-line-height}) + (#{$btn-padding-y} * 2) + (#{$btn-border-width * 2})) !important;
+    //width: calc((#{$btn-font-size} * #{$btn-line-height}) + (#{$btn-padding-y} * 2) + (#{$btn-border-width * 2})) !important;
 
     .feather {
         margin-top: 0 !important;
     }
 
     &.btn-xl {
-        height: calc((#{$btn-font-size-xl} * #{$btn-line-height}) + (#{$btn-padding-y-xl} * 2) + (#{$btn-border-width * 2})) !important;
-        width: calc((#{$btn-font-size-xl} * #{$btn-line-height}) + (#{$btn-padding-y-xl} * 2) + (#{$btn-border-width * 2})) !important;
+        //height: calc((#{$btn-font-size-xl} * #{$btn-line-height}) + (#{$btn-padding-y-xl} * 2) + (#{$btn-border-width * 2})) !important;
+        //width: calc((#{$btn-font-size-xl} * #{$btn-line-height}) + (#{$btn-padding-y-xl} * 2) + (#{$btn-border-width * 2})) !important;
         border-radius: 100%;
     }
 
     &.btn-lg {
-        height: calc((#{$btn-font-size-lg} * #{$btn-line-height}) + (#{$btn-padding-y-lg} * 2) + (#{$btn-border-width * 2})) !important;
-        width: calc((#{$btn-font-size-lg} * #{$btn-line-height}) + (#{$btn-padding-y-lg} * 2) + (#{$btn-border-width * 2})) !important;
+        //height: calc((#{$btn-font-size-lg} * #{$btn-line-height}) + (#{$btn-padding-y-lg} * 2) + (#{$btn-border-width * 2})) !important;
+        //width: calc((#{$btn-font-size-lg} * #{$btn-line-height}) + (#{$btn-padding-y-lg} * 2) + (#{$btn-border-width * 2})) !important;
     }
 
     &.btn-sm {
-        height: calc((#{$btn-font-size-sm} * #{$btn-line-height}) + (#{$btn-padding-y-sm} * 2) + (#{$btn-border-width * 2})) !important;
-        width: calc((#{$btn-font-size-sm} * #{$btn-line-height}) + (#{$btn-padding-y-sm} * 2) + (#{$btn-border-width * 2})) !important;
+        //height: calc((#{$btn-font-size-sm} * #{$btn-line-height}) + (#{$btn-padding-y-sm} * 2) + (#{$btn-border-width * 2})) !important;
+        //width: calc((#{$btn-font-size-sm} * #{$btn-line-height}) + (#{$btn-padding-y-sm} * 2) + (#{$btn-border-width * 2})) !important;
     }
 
     &.btn-xs {
-        height: calc((#{$btn-font-size-xs} * #{$btn-line-height}) + (#{$btn-padding-y-xs} * 2) + (#{$btn-border-width * 2})) !important;
-        width: calc((#{$btn-font-size-xs} * #{$btn-line-height}) + (#{$btn-padding-y-xs} * 2) + (#{$btn-border-width * 2})) !important;
+        //height: calc((#{$btn-font-size-xs} * #{$btn-line-height}) + (#{$btn-padding-y-xs} * 2) + (#{$btn-border-width * 2})) !important;
+        //width: calc((#{$btn-font-size-xs} * #{$btn-line-height}) + (#{$btn-padding-y-xs} * 2) + (#{$btn-border-width * 2})) !important;
         border-radius: 100%;
     }
 

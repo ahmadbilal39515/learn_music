@@ -1,35 +1,55 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <title>Bob Cekay</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html>
+<head>
+  <title>Bob Cekay</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
+  <!--
+  /////////////////////////////
+  FONTS
+  /////////////////////////////
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href=""/>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6P328653NX"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6P328653NX');
+  </script>
+
+  <!-- Event snippet for Website traffic conversion page -->
+  <script>
+      gtag('event', 'conversion', {'send_to': 'AW-11000507837/syCJCP35reYDEL3buf0o'});
+  </script>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%#= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11000507837"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<body>
+<div id="layoutDefault" class="bg-light">
+  <div id="layoutDefault_content">
+    <main>
+      <!-- Navbar-->
+      <%= render 'shared/navbar' %>
 
-        gtag('config', 'AW-11000507837');
-    </script>
-
-    <!-- Event snippet for Website traffic conversion page -->
-    <script>
-        gtag('event', 'conversion', {'send_to': 'AW-11000507837/syCJCP35reYDEL3buf0o'});
-    </script>
-  </head>
-
-  <body>
-    <%= render "shared/navbar" %>
-    <div class="container">
+      <!-- Page Header-->
       <%= yield %>
-    </div>
-    <%= render "shared/footer" %>
-  </body>
+    </main>
+  </div>
+  <%= render 'shared/footer' %>
+</div>
+</body>
 </html>

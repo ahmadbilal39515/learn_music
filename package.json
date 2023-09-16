@@ -1,16 +1,20 @@
 {
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.3.0",
-    "@hotwired/stimulus": "3.2.1",
-    "@hotwired/turbo-rails": "7.2.4",
-    "@popperjs/core": "^2.11.7",
-    "bootstrap": "5.2.3",
-    "bootstrap-icons": "1.10.3",
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^7.3.0",
+    "@popperjs/core": "^2.11.8",
+    "autoprefixer": "^10.4.15",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.0",
     "bootstrap-sass": "3.4.3",
     "bootstrap-scss": "5.2.3",
-    "esbuild": "0.16.17",
+    "esbuild": "^0.19.3",
     "font-awesome": "^4.7.0",
-    "sass": "1.57.1"
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.29",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.67.0"
   },
   "name": "bobcekay",
   "version": "1.0.0",
@@ -19,10 +23,15 @@
   "author": "Robert Cekay <robertcekay@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "esbuild ./app/javascript/*.* --bundle --sourcemap --outdir=./app/assets/builds",
-    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss app/assets/builds/application.scss --no-source-map --load-path=node_modules"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=/assets",
+    "build:css": "yarn build:css:compile && yarn build:css:prefix",
+    "build:css:compile": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
+    "build:css:prefix": "postcss ./app/assets/builds/application.css --use=autoprefixer --output=./app/assets/builds/application.css"
   },
   "devDependencies": {
-    "jquery": "^3.6.4"
-  }
+    "jquery": "^3.7.1"
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }

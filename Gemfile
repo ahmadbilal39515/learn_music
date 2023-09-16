@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.5'
+
 gem 'bootstrap_form'
 gem 'devise-bootstrap-form', '<= 0.2.0'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -82,10 +83,10 @@ end
 gem 'rails_admin', '~> 3.0'
 gem 'rubocop', '~> 1.44', require: false
 
-gem 'cssbundling-rails', '~> 1.1'
-
-gem 'jsbundling-rails', '~> 1.1'
-
 gem 'devise'
-
 gem 'font-awesome-rails'
+
+gem 'simplecov', require: false, group: :test
+gem "cssbundling-rails", "~> 1.3"
+
+gem "jsbundling-rails", "~> 1.2"

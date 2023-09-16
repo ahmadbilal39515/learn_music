@@ -36,6 +36,7 @@ class FunnelController < ApplicationController
   def real_majik
     @video_id = RM_GREETING_VIDEO_ID
     @person = Person.new
+
     render 'video_landding_page', layout: 'funnel'
   end
 

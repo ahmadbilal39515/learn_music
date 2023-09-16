@@ -1,13 +1,21 @@
 // Entry point for the build script in your package.json
+//
 
-const $ = require('jquery');
-// this "modifies" the jquery module: adding behavior to it
-// the bootstrap module doesn't export/return anything
+// // this "modifies" the jquery module: adding behavior to it
+// // the bootstrap module doesn't export/return anything
+
+
+import "@hotwired/turbo-rails"
 require('bootstrap');
-
 import * as bootstrap from 'bootstrap'
-import { Modal } from 'bootstrap'
-
-window.$ = $;
 window.bootstrap = bootstrap;
-window.Modal = Modal;
+// import { Modal } from 'bootstrap'
+
+// import "popper"
+import "bootstrap"
+
+import jquery from 'jquery'
+window.jQuery = jquery
+window.$ = jquery
+
+// window.Modal = Modal;
