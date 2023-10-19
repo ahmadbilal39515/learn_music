@@ -3,6 +3,8 @@
     "coverage": {
       "/Users/robertcekay/code/bobcekay/bobcekay/spec/helpers/home_helper_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           null,
@@ -117,6 +119,7 @@
           1,
           null,
           1,
+          null,
           1,
           null,
           1,
@@ -134,7 +137,6 @@
           1,
           1,
           2,
-          null,
           null,
           null,
           null,
@@ -233,6 +235,8 @@
           null,
           null,
           null,
+          1,
+          null,
           null,
           null
         ]
@@ -294,7 +298,6 @@
           null,
           null,
           null,
-          null,
           1,
           null,
           null,
@@ -395,7 +398,6 @@
           null,
           null,
           1,
-          null,
           null,
           null,
           null,
@@ -736,7 +738,6 @@
           1,
           null,
           null,
-          null,
           1,
           null,
           null
@@ -744,6 +745,7 @@
       },
       "/Users/robertcekay/code/bobcekay/bobcekay/app/models/user.rb": {
         "lines": [
+          null,
           null,
           null,
           1,
@@ -758,6 +760,7 @@
         "lines": [
           null,
           null,
+          null,
           1,
           1,
           null
@@ -767,12 +770,16 @@
         "lines": [
           null,
           null,
+          null,
           1,
           null
         ]
       },
       "/Users/robertcekay/code/bobcekay/bobcekay/app/helpers/home_helper.rb": {
         "lines": [
+          null,
+          null,
+          null,
           1,
           null
         ]
@@ -835,8 +842,6 @@
           null,
           1,
           null,
-          null,
-          null,
           null
         ]
       },
@@ -844,11 +849,11 @@
         "lines": [
           null,
           null,
-          1,
-          1,
-          1,
-          1,
           null,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
           1,
@@ -856,7 +861,6 @@
           null,
           1,
           0,
-          null,
           null,
           null
         ]
@@ -903,6 +907,8 @@
       },
       "/Users/robertcekay/code/bobcekay/bobcekay/spec/requests/home_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -912,6 +918,6 @@
         ]
       }
     },
-    "timestamp": 1687221758
+    "timestamp": 1697740990
   }
 }
