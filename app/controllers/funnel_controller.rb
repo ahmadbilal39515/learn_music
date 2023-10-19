@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Funnel Controller
 class FunnelController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:create_checkout_session]
   TR_GREETING_VIDEO_ID = 'jla_sNw568M'
@@ -80,8 +81,8 @@ class FunnelController < ApplicationController
     {
       line_items: [{ price: Rails.application.config.stripe_price_id, quantity: 1 }],
       mode: 'payment',
-      success_url: "https://drive.google.com/drive/folders/1JFJmS1U9IR_OSn_CR1tn4iqdxmTnZCku?usp=sharing",
-      cancel_url: "#{request.base_url}"
+      success_url: 'https://drive.google.com/drive/folders/1JFJmS1U9IR_OSn_CR1tn4iqdxmTnZCku?usp=sharing',
+      cancel_url: request.base_url.to_s
     }
   end
 

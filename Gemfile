@@ -86,7 +86,7 @@ gem 'rubocop', '~> 1.44', require: false
 gem 'devise'
 gem 'font-awesome-rails'
 
+gem 'cssbundling-rails', '~> 1.3'
 gem 'simplecov', require: false, group: :test
-gem "cssbundling-rails", "~> 1.3"
 
-gem "jsbundling-rails", "~> 1.2"
+gem 'jsbundling-rails', '~> 1.2'

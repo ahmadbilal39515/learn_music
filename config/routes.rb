@@ -22,4 +22,3 @@ Rails.application.routes.draw do
   root 'home#main'
   # root 'funnel#real_majik'
 end
-

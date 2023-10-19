@@ -9,6 +9,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module Bobcekay
+  # Application
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
@@ -29,6 +30,5 @@ module Bobcekay
         end
       end
     end
-
   end
 end
