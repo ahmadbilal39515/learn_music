@@ -90,3 +90,5 @@ gem 'cssbundling-rails', '~> 1.3'
 gem 'simplecov', require: false, group: :test
 
 gem 'jsbundling-rails', '~> 1.2'
+
+gem 'bundler-audit'
