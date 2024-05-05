@@ -3,14 +3,14 @@
     <div class="">
       <div class="row align-items-center">
         <div class="col-sm-12 col-md-8 offset-md-2">
-          <!--          <button id="show-modal-button" type="button" onclick="new Modal($('#userDataModal')).show()" class="btn btn-dark">-->
-          <!--            <i id='cart-icon' class="bi bi-cart"></i>-->
-          <!--            <p>YES! RESERVE MY COPY OF REAL MAJIK NOW!</p>-->
-          <!--          </button>-->
+                    <button id="show-modal-button" type="button" onclick="$('#userDataModal').show()" class="btn btn-dark">
+                      <i id='cart-icon' class="bi bi-cart"></i>
+                      <p>YES! RESERVE MY COPY OF REAL MAJIK NOW!</p>
+                    </button>
 
-          <%= form_with model: @person, url: :create_checkout_session, method: :post do |form| %>
-            <%= form.submit "YES! RESERVE MY COPY OF REAL MAJIK NOW!", class: "btn btn-dark", id: 'show-modal-button', formtarget: "_blank" %>
-          <% end %>
+          <%#= form_with model: @person, url: :create_checkout_session, method: :post do |form| %>
+            <%#= form.submit "YES! RESERVE MY COPY OF REAL MAJIK NOW!", class: "btn btn-dark", id: 'show-modal-button', formtarget: "_blank" %>
+          <%# end %>
         </div>
       </div>
     </div>

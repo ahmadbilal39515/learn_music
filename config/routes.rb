@@ -7,15 +7,20 @@ Rails.application.routes.draw do
 
   resource :funnel
 
+
+  get '/ways_of_the_guitar_diagrams', to: 'funnel#ways_of_the_guitar_email_squeeze'
+  match :ways_of_the_guitar_email_squeeze_submit, to: 'funnel#ways_of_the_guitar_email_squeeze_submit', as: 'ways_of_the_guitar_email_squeeze_submit', via: [:post]
+  get '/ways_of_the_guitar', to: 'funnel#ways_of_the_guitar', as: 'ways_of_the_guitar'
+
+
+
+
+
   get '/realmajik', to: 'funnel#real_majik'
-
   get '/turquoiserings', to: 'funnel#email_squeeze'
-
   match :turquoiserings_confirmation, to: 'funnel#email_squeeze_submit', as: 'turquoiserings_confirmation', via: [:post]
-
   post '/create_checkout_session', to: 'funnel#create_checkout_session'
   get '/real_majik_purchased', to: 'funnel#real_majik_purchased'
-
   post '/confirmation', to: 'funnel#email_squeeze_confirmation'
 
   # Defines the root path route ("/")

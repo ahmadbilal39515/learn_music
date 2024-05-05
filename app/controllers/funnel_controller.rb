@@ -8,6 +8,47 @@ class FunnelController < ApplicationController
 
   RM_GREETING_VIDEO_ID = 'fxLeurQaf0g'
   RM_THANK_YOU_VIDEO_ID = 'q2kTh3257A8'
+
+  ############################
+  #  Ways of the guitar funnel
+  ############################
+  def ways_of_the_guitar_email_squeeze
+    @person = Person.new
+    @video_id = TR_GREETING_VIDEO_ID
+    render 'funnel/ways_of_the_guitar/email_squeeze', layout: 'funnel'
+  end
+
+
+  def ways_of_the_guitar_email_squeeze_submit
+    @person = Person.new(person_params)
+
+    if @person.save
+      @render_file = true
+      @video_id = TR_THANK_YOU_VIDEO_ID
+      flash.now[:notice] = 'Thanks for downloading Turquoise Rings! Click the download button below!'
+    else
+      flash.now[:error] = @person.errors.full_messages[0]
+    end
+
+    redirect_to :ways_of_the_guitar
+  end
+
+  def ways_of_the_guitar
+    @person = Person.new
+    @video_id = TR_GREETING_VIDEO_ID
+    render 'funnel/ways_of_the_guitar/ways_of_the_guitar', layout: 'funnel'
+  end
+
+  ############################
+  #  Ways of the guitar funnel
+  ############################
+
+
+
+
+
+
+
   ##########################
   #  Turquoise Rings Funnel
   ##########################
@@ -74,6 +115,12 @@ class FunnelController < ApplicationController
 
     Person.new(person_params)
   end
+
+
+
+
+
+
 
   private
 

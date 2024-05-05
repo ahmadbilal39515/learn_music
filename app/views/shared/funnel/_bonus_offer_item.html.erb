@@ -1,0 +1,51 @@
+<section>
+  <div class="bonus-offer container">
+    <div class="bonus-offer-item-header row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="">
+      <div id="col-full-117" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
+        <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
+          <div class="de ui-droppable de-editable" id="headline-85828" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
+            <div class="bonus-offer-item-header-text ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 deneg1pxLetterSpacing lh4 mfs_22" style="" data-bold="inherit" contenteditable="false">
+              <font color="#ffffff">
+                  <b><%= title %></b>
+              </font>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bonus-offer-item-body bonus-offer-body row bgCover borderSolid cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin borderLight border1px" id="row--11968-148-156" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row - Clone - Clone" style="">
+      <div id="col-full-117-168-174" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
+        <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
+          <div class="de ui-droppable de-editable" id="headline-88306-154" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
+            <div class="bonus-offer-item-body-headline ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" data-bold="inherit" contenteditable="false">
+              <b><%= description_one %></b>
+            </div>
+          </div>
+          <div class="de ui-droppable de-editable" id="headline-52844-156" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 10px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
+            <div class="bonus-offer-item-body-total-value ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_25" data-bold="inherit" contenteditable="false">
+              <b></b>
+              <b><%= total_value %></b>
+            </div>
+          </div>
+          <% if local_assigns[:image] %>
+          <div class="bonus-offer-image-container de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="img-57663" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 5px; outline: none; cursor: pointer;" aria-disabled="false">
+            <img src="<%= image_path(image) %>" class="elIMG ximg" alt="Bonus #2 - Hook, Story, Offer" width="80%" tabindex="0">
+          </div>
+          <% end %>
+          <div class="de ui-droppable de-editable" id="headline-15790-110-134" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
+            <div class="bonus-offer-item-body-description ne elHeadline lh3 elMargin0 elBGStyle0 hsTextShadow0 hsSize2 mfs_16" data-bold="inherit" contenteditable="false">
+              <div class="">
+                <%= description_two.html_safe %>
+              </div>
+            </div>
+          </div>
+          <div class="de ui-droppable de-editable" id="headline-28919" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="ran" data-animate="top" data-delay="500" style="outline: none; cursor: pointer; margin-top: 0px; opacity: 1; position: relative; top: 0px;" aria-disabled="false">
+            <div class="bonus-offer-item-body-headline ne elHeadline elMargin0 elBGStyle0 hsTextShadow0 hsSize4 lh1 deneg1pxLetterSpacing mfs_22" data-bold="inherit" contenteditable="false">
+              <b><%= call_to_action.html_safe %></b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
