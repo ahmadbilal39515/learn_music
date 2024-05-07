@@ -1,31 +1,85 @@
 <%= render :partial => "shared/funnel/video_header" %>
 
-<%= render partial: "shared/funnel/bonus_offer_item", locals: {
-  title: 'Bonus #1 - Real Majik E-book',
-  description_one: '"Behind the Scenes of Real Majik - Get a FREE E-Book on the Making of the Most Epic Rock Album of the Year!"',
-  # image: 'makin_real_majik_e_book.jpg',
-  total_value: 'Total Value: $34.00',
-  description_two: 'In this captivating E-book, you\'ll be taken on a journey behind the scenes of the making of <b>Real Majik</b>. Follow the journey of Bob Cekay as he navigates the highs and lows of creating an epic rock masterpiece.',
-  call_to_action: 'Get This For FREE When You Order Your Copy Of <i>Real Majik</i> Today!'
+<%= render partial: "shared/funnel/offer_item", locals: {
+  title: 'Section #1 - Mindset',
+  description_one: 'Everything starts in the mind',
+  total_value: 'Total Value: $12.00',
+  description_two: 'Everything starts with the mind and your guitar playing is no different, in this module we\'re going to get our minds right and prepare for the journey ahead',
 } %>
 
-<%= render partial: "shared/funnel/bonus_offer_item", locals: {
-  title: 'Bonus #2 - Turquoise Rings',
-  description_one: '"Behind the Scenes of Real Majik - Get a FREE E-Book on the Making of the Most Epic Rock Album of the Year!"',
-  # image: 'makin_real_majik_e_book.jpg',
-  total_value: 'Total Value: $34.00',
-  description_two: 'In this captivating E-book, you\'ll be taken on a journey behind the scenes of the making of <b>Real Majik</b>. Follow the journey of Bob Cekay as he navigates the highs and lows of creating an epic rock masterpiece.',
-  call_to_action: 'Get This For FREE When You Order Your Copy Of <i>Real Majik</i> Today!'
+<%= render partial: "shared/funnel/offer_item", locals: {
+  title: 'Section #2 - Intervals',
+  description_one: 'The foundation of all scales and chords!',
+  total_value: 'Total Value: $12.00',
+  description_two: 'Intervals are the building blocks of music, we don\'t have scales of chords without them. For that reason we\'re got get up close and personal with each one of them',
+} %>
+
+<%= render partial: "shared/funnel/offer_item", locals: {
+  title: 'Section #3 - The Major Scale',
+  description_one: 'The Single most important scale in music',
+  total_value: 'Total Value: $12.00',
+  description_two: 'The Major Scale is the behind almost every great song and guitar solo you have ever heard, for that reason where doing to get up close and personal with this titan of music',
+} %>
+
+<%= render partial: "shared/funnel/offer_item", locals: {
+  title: 'Section #4 - Intro to Chords',
+  description_one: 'A Critical piece of the puzzle',
+  total_value: 'Total Value: $12.00',
+  description_two: 'The primary tool of any great rhythm guitar player are chords, if you don\'t know your chords you don\'t know nothin!',
+} %>
+
+<%= render partial: "shared/funnel/offer_item", locals: {
+  title: 'Section #5 - Chord Tones',
+  description_one: 'Your secret weapon for sexy guitar solos',
+  total_value: 'Total Value: $12.00',
+  description_two: 'Chords tones are not only what you use to build chords, but can be used for melody and improvising, absolutely critical for the serious guitar player!',
+} %>
+
+<%= render partial: "shared/funnel/offer_item", locals: {
+  title: 'Section #6 - Pentatonic Scale',
+  description_one: 'This is where you learn guitar solos',
+  total_value: 'Total Value: $12.00',
+  description_two: 'This scale changed my life forever and to this day it is an essential part of my arsenal, lets go in depth into this juggernaut of music.',
+} %>
+
+
+<%= render partial: "shared/funnel/offer_item", locals: {
+  title: 'Section #7 - Models of the Major Scale',
+  description_one: 'This is things really start to get interesting',
+  total_value: 'Total Value: $12.00',
+  description_two: 'Modes are an INCREDIBLE tool once you understand them. I\'m gonna teach you how to harness the power of modes and its actually WAY EASIER then you might think',
+} %>
+
+
+<%= render partial: "shared/funnel/offer_item", locals: {
+  title: 'Section #8 - Interval Note Patterns',
+  description_one: 'Moving across the guitar in new ways',
+  total_value: 'Total Value: $12.00',
+  description_two: 'You can never have enough note patterns, I\'m gonna teach you some of my favorite, as well as, how to create you very own!',
+} %>
+
+
+<%= render partial: "shared/funnel/offer_item", locals: {
+  title: 'Section #9 - Rhythmic Note Patterns',
+  description_one: 'Introducing your new best friend, Rhythm',
+  total_value: 'Total Value: $12.00',
+  description_two: 'The difference between professionals and amauters is rhythm, where gonna get deep into how we can use rhythm to improve our guitar solos.',
 } %>
 
 <div class="container">
-  <%= render :partial => "shared/funnel/purchase_button" %>
+  <%= render :partial => "shared/buttons/external_link_button", locals: {
+    button_text: 'YES! I WANT TO JOIN WAYS OF THE GUITAR!',
+    href: 'https://www.skool.com/way-of-the-guitar-5694/about'
+  } %>
 </div>
 
 <%= render :partial => "shared/funnel/why_section" %>
 
-<%= render :partial => "shared/funnel/total_value" %>
+<%= render :partial => "shared/funnel/total_value/total_value" %>
 
 <div class="container">
-  <%= render :partial => "shared/funnel/purchase_button" %>
+  <%= render :partial => "shared/buttons/external_link_button", locals: {
+    button_text: 'YES! I WANT TO JOIN WAYS OF THE GUITAR!',
+    href: 'https://www.skool.com/way-of-the-guitar-5694/about'
+  } %>
 </div>

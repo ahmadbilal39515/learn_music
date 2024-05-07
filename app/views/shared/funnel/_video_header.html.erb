@@ -20,7 +20,11 @@
           </div>
           <p class="page-header-ui-text"></p>
         </div>
-        <%= render :partial => "shared/funnel/purchase_button" %>
+
+        <%= render :partial => "shared/buttons/external_link_button", locals: {
+          button_text: 'YES! I WANT TO JOIN WAYS OF THE GUITAR!',
+          href: 'https://www.skool.com/way-of-the-guitar-5694/about'
+        } %>
       </div>
     </div>
   </div>

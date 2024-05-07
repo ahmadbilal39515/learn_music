@@ -9,15 +9,16 @@ class FunnelController < ApplicationController
   RM_GREETING_VIDEO_ID = 'fxLeurQaf0g'
   RM_THANK_YOU_VIDEO_ID = 'q2kTh3257A8'
 
+  WOTG_VIDEO_ID = 'YMBa_wi-zKI'
+
   ############################
   #  Ways of the guitar funnel
   ############################
   def ways_of_the_guitar_email_squeeze
     @person = Person.new
-    @video_id = TR_GREETING_VIDEO_ID
+    @video_id = WOTG_VIDEO_ID
     render 'funnel/ways_of_the_guitar/email_squeeze', layout: 'funnel'
   end
-
 
   def ways_of_the_guitar_email_squeeze_submit
     @person = Person.new(person_params)
@@ -35,19 +36,13 @@ class FunnelController < ApplicationController
 
   def ways_of_the_guitar
     @person = Person.new
-    @video_id = TR_GREETING_VIDEO_ID
+    @video_id = WOTG_VIDEO_ID
     render 'funnel/ways_of_the_guitar/ways_of_the_guitar', layout: 'funnel'
   end
 
   ############################
   #  Ways of the guitar funnel
   ############################
-
-
-
-
-
-
 
   ##########################
   #  Turquoise Rings Funnel
@@ -115,12 +110,6 @@ class FunnelController < ApplicationController
 
     Person.new(person_params)
   end
-
-
-
-
-
-
 
   private
 
