@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Funnel Controller
-class FunnelController < ApplicationController
+class CourseController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:create_checkout_session]
   TR_GREETING_VIDEO_ID = 'jla_sNw568M'
   TR_THANK_YOU_VIDEO_ID = 'XbLHY4mbhGc'
@@ -17,7 +17,7 @@ class FunnelController < ApplicationController
   def ways_of_the_guitar_email_squeeze
     @person = Person.new
     @video_id = WOTG_VIDEO_ID
-    render 'funnel/ways_of_the_guitar/lesson', layout: 'funnel'
+    render 'course/lesson', layout: 'course'
   end
 
   def ways_of_the_guitar_email_squeeze_submit
@@ -37,7 +37,7 @@ class FunnelController < ApplicationController
   def ways_of_the_guitar
     @person = Person.new
     @video_id = WOTG_VIDEO_ID
-    render 'funnel/ways_of_the_guitar/ways_of_the_guitar', layout: 'funnel'
+    render 'funnel/ways_of_the_guitar/ways_of_the_guitar', layout: 'course'
   end
 
   ############################
@@ -47,7 +47,7 @@ class FunnelController < ApplicationController
   ##########################
   #  Turquoise Rings Funnel
   ##########################
-  def email_squeeze
+  def lesson
     @person = Person.new
     @video_id = TR_GREETING_VIDEO_ID
     render layout: 'funnel'
@@ -64,7 +64,7 @@ class FunnelController < ApplicationController
       flash.now[:error] = @person.errors.full_messages[0]
     end
 
-    render 'lesson', layout: 'funnel'
+    render 'lesson', layout: 'course'
   end
 
   ##########################
@@ -74,7 +74,7 @@ class FunnelController < ApplicationController
     @video_id = RM_GREETING_VIDEO_ID
     @person = Person.new
 
-    render 'video_landding_page', layout: 'funnel'
+    render 'video_landding_page', layout: 'course'
   end
 
   def create_checkout_session
@@ -101,7 +101,7 @@ class FunnelController < ApplicationController
     @render_file = true
     flash.now[:notice] = 'Thanks for purchasing Real Majik! Click the download button below!'
 
-    render 'real_majik', layout: 'funnel'
+    render 'real_majik', layout: 'course'
   end
 
   def existing_or_new_person

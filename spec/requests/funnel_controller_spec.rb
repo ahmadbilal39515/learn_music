@@ -6,7 +6,7 @@ RSpec.describe 'FunnelControllers', type: :request do
   describe 'GET /index' do
   end
 
-  describe 'email_squeeze' do
+  describe 'lesson' do
   end
 
   describe 'email_squeeze_submit' do

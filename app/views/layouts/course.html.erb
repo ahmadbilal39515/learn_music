@@ -52,11 +52,27 @@
       <!-- Navbar-->
       <%= render 'shared/funnel_header' %>
 
+<!--      https://getbootstrap.com/docs/5.0/examples/sidebars/#-->
+      <%#= render 'shared/sidebar' %>
+
       <!-- Page Header-->
-      <%= yield %>
+      <%#= yield %>
+
+      <div class="container-fluid">
+        <div class="row flex-nowrap">
+          <div class="col-auto col-md-3 col-xl-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start pt-2 text-white min-vh-100">
+              <%= render 'shared/sidebar' %>
+            </div>
+          </div>
+          <div class="col py-3">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
-  <%= render 'shared/funnel_footer' %>
+  <%= render 'shared/course/footer' %>
 </div>
 </body>
 </html>
