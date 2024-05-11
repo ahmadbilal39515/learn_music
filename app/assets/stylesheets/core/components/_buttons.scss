@@ -193,14 +193,14 @@
         // border
         transparent,
         // color
-        fade-out($white, 0.5),
+        fade-out($gray-600, 0.5),
 
         // hover background
-        fade-out($white, 0.9),
+        fade-out($gray-600, 0.9),
         // hover border
         transparent,
         // hover color
-        fade-out($white, 0.5),
+        fade-out($gray-100, 0.5),
 
         // active background
         fade-out($white, 0.8),
@@ -235,11 +235,11 @@
         fade-out($white, 0.5),
 
         // hover background
-        fade-out($white, 0.85),
+        fade-out($gray-600, 0.85),
         // hover border
         transparent,
         // hover color
-        fade-out($white, 0.5),
+        fade-out($gray-600, 0.5),
 
         // active background
         fade-out($white, 0.8),

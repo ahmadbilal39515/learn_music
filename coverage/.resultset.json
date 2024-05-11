@@ -57,6 +57,8 @@
           null,
           null,
           null,
+          null,
+          null,
           1,
           null,
           0,
@@ -91,6 +93,13 @@
           null,
           1,
           null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -685,6 +694,42 @@
           null
         ]
       },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/factories/course_modules.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/factories/courses.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/factories/documents.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/factories/lessons.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/robertcekay/code/bobcekay/bobcekay/spec/factories/orders.rb": {
         "lines": [
           null,
@@ -725,16 +770,20 @@
           null,
           null,
           1,
-          null,
           1,
           null,
-          1,
-          null,
-          1,
           null,
           1,
           1,
+          1,
+          1,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           null,
           null,
@@ -808,6 +857,86 @@
           null,
           0,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/models/course_module_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/app/models/course_module.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/models/course_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/app/models/course.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/models/document_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/app/models/document.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/models/lesson_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/app/models/lesson.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -918,6 +1047,6 @@
         ]
       }
     },
-    "timestamp": 1697740990
+    "timestamp": 1715459869
   }
 }

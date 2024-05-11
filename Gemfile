@@ -94,3 +94,5 @@ gem 'jsbundling-rails', '~> 1.2'
 gem 'bundler-audit'
 
 gem 'brakeman'
+
+gem 'shoulda-matchers', '~> 6.0'
