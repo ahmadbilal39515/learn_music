@@ -1,0 +1,42 @@
+<section class="bg-light pt-10 mt-5">
+
+
+  <div class="container">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Your Courses</h1>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <% @courses.each do |course| %>
+              <div class="col-md-4">
+                <a href="/course/<%= course.id %>">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" data-src="<%= image_path('WOTG Logo.png') %>" alt="Thumbnail [100%x225]" src="<%= image_path('WOTG Logo.png') %>" data-holder-rendered="true">
+                  <div class="card-body">
+                    <p class="card-text"><%= course.name %></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <% if course.is_pro %>
+                          <a type="button" class="btn btn-sm btn-outline-secondary">PRO MEMBERSHIP COURSE</a>
+                        <% end %>
+<!--                        <a href="https://www.youtube.com/watch?v=CMAm_Ax_O1M" target="_blank" type="button" class="btn btn-sm btn-outline-secondary"><i class="bi bi-youtube"></i></a>-->
+                      </div>
+                      <small class="text-muted">30 lessson</small>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

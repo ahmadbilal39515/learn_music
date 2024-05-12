@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   resource :course
-  get '/course_dashboard', to: 'course#ways_of_the_guitar_email_squeeze'
+  get '/course_dashboard', to: 'course#index'
+  get "/course/:id(/:lesson_id)", to: "course#show"
 
 
   resource :funnel

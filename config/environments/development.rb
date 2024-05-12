@@ -9,7 +9,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.consider_all_requests_local = true
   config.server_timing = true
-  config.assets.debug = false
+  config.assets.debug = true
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
