@@ -27,4 +27,21 @@ class SubscriptionController < ApplicationController
       redirect_to edit_user_registration_url
     end
   end
+
+  def cancel
+    if current_user.present?
+      begin
+        customer_subscriptions = Stripe::Subscription.list(customer: current_user.customer_id)
+        current_user.update(is_pro: false, customer_id: nil) if customer_subscriptions.present? && !customer_subscriptions.empty?
+        customer_subscriptions.each do |subscription|
+          stripe_subscription = Stripe::Subscription.retrieve(subscription['id'])
+          stripe_subscription.cancel
+        end
+        flash[:notice] = 'User has already subscribed.'
+        redirect_to edit_user_registration_url
+      rescue Stripe::StripeError => e
+        Rails.logger.error("Stripe API Error: #{e.message}")
+      end
+    end
+  end
 end
