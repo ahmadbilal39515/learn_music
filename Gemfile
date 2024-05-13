@@ -10,7 +10,7 @@ gem 'devise-bootstrap-form', '<= 0.2.0'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4.1'
 
-gem 'stripe', '~> 8.1.0'
+gem 'stripe', '~> 10.0'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -60,6 +60,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec-rails'
+  gem 'dotenv-rails', '~> 3.1', '>= 3.1.2'
 end
 
 group :development do
