@@ -15,6 +15,14 @@ class CourseController < ApplicationController
   #  Ways of the guitar funnel
   ############################
   def ways_of_the_guitar_email_squeeze
+    if current_user.present?
+      begin
+        customer_subscriptions = Stripe::Subscription.list(customer: current_user.customer_id)
+        current_user.update(is_pro: true) if customer_subscriptions.present? && !customer_subscriptions.empty?
+      rescue Stripe::StripeError => e
+        Rails.logger.error("Stripe API Error: #{e.message}")
+      end
+    end
     @person = Person.new
     @video_id = WOTG_VIDEO_ID
     render 'course/lesson', layout: 'course'
