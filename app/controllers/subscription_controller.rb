@@ -16,7 +16,7 @@ class SubscriptionController < ApplicationController
           }],
           success_url: "#{course_dashboard_url}/",
         })
-        redirect_to @stripe_session[:url], allow_other_host: true
+        redirect_to @stripe_session.url, allow_other_host: true
       rescue Stripe::StripeError => e
         Rails.logger.error e
         flash[:alert] = 'An error occurred while processing your request.'
@@ -32,16 +32,26 @@ class SubscriptionController < ApplicationController
     if current_user.present?
       begin
         customer_subscriptions = Stripe::Subscription.list(customer: current_user.customer_id)
-        current_user.update(is_pro: false, customer_id: nil) if customer_subscriptions.present? && !customer_subscriptions.empty?
-        customer_subscriptions.each do |subscription|
-          stripe_subscription = Stripe::Subscription.retrieve(subscription['id'])
-          stripe_subscription.cancel
+        unless customer_subscriptions.empty?
+          current_user.update(is_pro: false, customer_id: nil)
+          customer_subscriptions.each do |subscription|
+            stripe_subscription = Stripe::Subscription.retrieve(subscription['id'])
+            stripe_subscription.cancel
+          end
+          flash[:notice] = 'Your subscription has been canceled.'
+        else
+          flash[:notice] = 'You do not have an active subscription.'
         end
-        flash[:notice] = 'User has already subscribed.'
-        redirect_to edit_user_registration_url
       rescue Stripe::StripeError => e
         Rails.logger.error("Stripe API Error: #{e.message}")
+        flash[:alert] = 'An error occurred while canceling your subscription. Please try again later.'
       end
+    else
+      flash[:alert] = 'You need to sign in or sign up before continuing.'
+      redirect_to root_path
+      return
     end
+    redirect_to edit_user_registration_url
   end
+
 end
