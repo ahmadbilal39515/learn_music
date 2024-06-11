@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative 'boot'
-
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
@@ -21,7 +20,15 @@ module Bobcekay
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    #
+
+    config.to_prepare do
+      Devise::SessionsController.layout "course"
+      Devise::RegistrationsController.layout "course"
+      Devise::ConfirmationsController.layout "course"
+      Devise::UnlocksController.layout "course"
+      Devise::PasswordsController.layout "course"
+    end
+
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'local_env.yml')
       if File.exist?(env_file)

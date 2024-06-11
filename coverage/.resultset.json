@@ -163,6 +163,8 @@
           null,
           null,
           null,
+          null,
+          null,
           1,
           null,
           0,
@@ -198,6 +200,13 @@
           1,
           null,
           null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -217,7 +226,6 @@
           null,
           null,
           1,
-          null,
           1,
           null,
           null,
@@ -909,6 +917,8 @@
           null,
           null,
           null,
+          null,
+          1,
           1,
           null
         ]
@@ -918,7 +928,15 @@
           null,
           null,
           null,
+          null,
           1,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
           null
         ]
       },
@@ -930,28 +948,80 @@
       },
       "/home/ahmad/projects/bobcekay/spec/support/factory_bot.rb": {
         "lines": [
-          null,
-          null,
-          null,
+          1,
           null,
           1,
           1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/app/models/course_module.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/models/course_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
           null
         ]
       },
       "/home/ahmad/projects/bobcekay/spec/support/chrome.rb": {
         "lines": [
-          null,
-          null,
-          null,
-          null,
           1,
           1,
-          0,
-          0,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/models/document_spec.rb": {
+        "lines": [
+          1,
           null,
-          0,
+          1,
           null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/app/models/document.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/spec/models/lesson_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/robertcekay/code/bobcekay/bobcekay/app/models/lesson.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           null,
           null
         ]

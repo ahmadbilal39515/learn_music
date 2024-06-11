@@ -1,0 +1,37 @@
+<header class="page-header-ui page-header-ui-dark bg-img-repeat bg-light" style="background-image: url('')">
+  <div class="page-header-ui-content">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12" id="video-landing-header">
+          <h1 class="page-header-ui-title">
+            “Get Ready to take your guitar playing to the next level!“
+          </h1>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-8 offset-md-2">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              id="main-banner-video"
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/<%= @video_id %>?autoplay=1&mute=1"
+            >
+            </iframe>
+          </div>
+          <p class="page-header-ui-text"></p>
+        </div>
+
+        <%= render :partial => "shared/buttons/external_link_button", locals: {
+          button_text: 'YES! I WANT TO JOIN WAYS OF THE GUITAR!',
+          href: 'https://www.skool.com/way-of-the-guitar-5694/about'
+        } %>
+      </div>
+    </div>
+  </div>
+  <div class="svg-border-angled text-white">
+    <!-- Angled SVG Border-->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor">
+      <polygon points="0,100 100,0 100,100"></polygon>
+    </svg>
+  </div>
+</header>

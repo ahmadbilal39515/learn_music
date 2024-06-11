@@ -1,4 +1,4 @@
-<nav id="home-navbar" class="navbar navbar-marketing navbar-expand-lg navbar-dark bg-dark">
+<nav id="navbar" class="navbar navbar-marketing navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a id="navbar-brand" class="text-light" href="/">BOB CEKAY</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,21 +16,17 @@
         <li class="nav-item">
           <a class="nav-link text-light" target="_blank" href="https://www.youtube.com/channel/UCvMVTd9YOYZy_2tpB-R8CLQ?sub_confirmation=1">YOUTUBE</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" target="_blank" href="<%= ways_of_the_guitar_path %>">WAYS OF THE GUITAR</a>
-        </li>
-
-<!--        <li class="nav-item dropdown">-->
-<!--          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--            Dropdown-->
-<!--          </a>-->
-<!--          <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-<!--            <a class="dropdown-item" href="#">Action</a>-->
-<!--            <a class="dropdown-item" href="#">Another action</a>-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            WAYS OF THE GUITAR
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="<%= new_user_session_path %>">Login</a>
+            <a class="dropdown-item" href="<%= ways_of_the_guitar_path %>">Whats Ways of the Guitar?</a>
 <!--            <div class="dropdown-divider"></div>-->
 <!--            <a class="dropdown-item" href="#">Something else here</a>-->
-<!--          </div>-->
-<!--        </li>-->
+          </div>
+        </li>
       </ul>
     </div>
   </div>
